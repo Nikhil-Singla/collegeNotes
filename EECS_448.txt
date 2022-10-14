@@ -1,0 +1,9 @@
+Scope of Software Engineering: Life-Cycle Models, Software Process, Teams, Tools, Testing, Planning, and Estimating
+
+Software products: Generic Software Systems (provide useful functionality to a range of customers)
+Example: large-scale business systems (MS Excel); personal products (Evernote); simple apps/games (Suduko)
+Software Engineering Techniques = One-off, Custom Software Systems
+Customer has Problems (generates) Requirements for Customer and Developer (implemented by) Developer through Software (helping with) Customers Problem
+
+Project-Based Software Engineering
+starting point: set of ‘software requirements’ owned by an external client to support their business processes
