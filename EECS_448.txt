@@ -6,4 +6,13 @@ Software Engineering Techniques = One-off, Custom Software Systems
 Customer has Problems (generates) Requirements for Customer and Developer (implemented by) Developer through Software (helping with) Customers Problem
 
 Project-Based Software Engineering
-starting point: set of ‘software requirements’ owned by an external client to support their business processes
+Starting point: Set of ‘software requirements’ wned by an external client to support their business processes
+
+
+Relation between UML and programming languages: 
+UML = Concepts without counterparts
+- Java: Language specific details
+Union = Directly mappable parts
+
+/ implies derived attribute
+$ implies static attribute
