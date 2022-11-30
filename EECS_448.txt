@@ -16,3 +16,4 @@ Union = Directly mappable parts
 
 / implies derived attribute
 $ implies static attribute
+
