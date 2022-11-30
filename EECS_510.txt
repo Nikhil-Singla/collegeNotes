@@ -32,3 +32,47 @@ Introduction to formal proof.
 To make your proof correct, set up an inductive hypothesis. And it is helpful to reason, formally or informally, that the hypothesis is consistent with the iteration or recursion. 
 
 Deductive proofs. 
+
+Reductive proof consists of sequence of statements whose truth leads us from some initial statement, that is the hypothesis or the given statement to a conclusion statement. 
+
+Each step must follow an accepted logical principle. Or some of the previous statements in the deductive proof. The hypothesis may be true or false. Often Consists of. Several independent statements. Connected by a logical and. 
+
+The theorem is proved when we go from a hypothesis to a conclusion. That is, if H then C. 
+
+C is deducted from H. 
+
+The rule models ponens is if we know is true and we know if H then C is true, we may conclude that C is true. 
+
+We may also use if A&B are two previous statements, we can deduce and write down statement A and B. 
+
+Each statement has to be followed by a justification as mentioned above. 
+
+Reductions to Definitions. 
+
+Theorems may use, terms such as integers, additions and multiplications. 
+
+In many theorems, including many from automata theory, the terms used in the statements may have implications that are less obvious.  
+
+A useful way to proceed proofs is to convert all terms in the hypothesis to their definitions. 
+
+many theorems involve statements that use quantifiers, “For all” and “there exists”, or similar variations, such as “for every” instead of “for all”. 
+
+The order of these quantifiers is what the statement means. 
+
+Other theorem forms. 
+
+If, then form is the most common in typical areas of mathematics 
+
+Ways of saying if then 
+
+If hypothesis is true for a given value of parameters, then the conclusion C is true for the same value. 
+
+Here some of the other ways to say that colons 
+
+1 H implies C 
+
+#2 H only if C 
+
+#3 C if H 
+
+4. Whenever H holds, C follows. 
