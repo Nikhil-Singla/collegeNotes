@@ -1,0 +1,45 @@
+why study automata theory? 
+
+Finite automata. Useful model for many important kinds of hardware and software 
+
+For example. 
+
+Number one, designing and checking behavior of digital circuits. Number two lexical analyzer of typical compiler #3. Scanning large bodies of text #4. Verifying system of all types that have finite number of distinct states. 
+
+Many systems or components that may be viewed as being at all times in a finite number of states. 
+
+Purpose of states: Remember the relevant portion of systems history 
+
+Advantages of finite states is that we can implement with a fixed set of resources 
+
+For example on an off switch 
+
+Input is just one button. Push remember the last state of or on and swap the state when the button is pushed. 
+
+One of the states is the start state, in our example the off. 
+
+Necessary to indicate one or more states as the final state 
+
+Another example could be recognized the keyword. Then each position in the word then has been reached by each of the letters. These positions correspond to the prefixes of the word ranging from empty string to the complete word.  
+
+Send. The job of this automaton is to recognize when Den has been seen. We consider that state to be the lone accepting state. 
+
+Structural representations. 
+
+Number one. Grammars are useful models when designing software that process data with a recursive structure. For example parser. 
+
+Number two. Regular expressions remove the structure of data, especially text strings. 
+
+Automata and complexity. 
+
+Automata are essential for the study of limits of computation. Two important issues 
+
+Number one, what can a computer do? Decidability 
+
+What can a computer do efficiently? Intractability. 
+
+Introduction to formal proof. 
+
+To make your proof correct, set up an inductive hypothesis. And it is helpful to reason, formally or informally, that the hypothesis is consistent with the iteration or recursion. 
+
+Deductive proofs. 
