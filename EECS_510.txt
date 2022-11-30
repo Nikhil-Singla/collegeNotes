@@ -1,3 +1,4 @@
+-> Dictation Method of taking notes
 Why study automata theory? 
 Finite automata. Useful model for many important kinds of hardware and software.
 
