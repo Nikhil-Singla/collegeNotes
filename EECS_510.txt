@@ -59,18 +59,13 @@ Here some of the other ways to say that:
 #3 C if H 
 #4 Whenever H holds, C follows. 
 
-Sometimes statements may be of the form “A if and only if B. Other forms of this statement are, “A iff B”, or “a exactly when B” 
-
-This statement is actually two if-then statements. “If A then B” & “If, B then A.” 
-
-The only if part: “if A then B” which is often stated in the equivalent form “A only if B” Is used to prove “A if and only if B”. 
+Sometimes statements may be of the form “A if and only if B. Other forms of this statement are, “A iff B”, or “A exactly when B” 
+This statement is actually two if-then statements: “If A then B” & “If, B then A.” 
+The only if part: (“if A then B” which is often stated in the equivalent form “A only if B”) is used to prove “A if and only if B”. 
 
 Additional forms of proof 
-
-Number one, proofs about sets 
-
-Number two proofs by contradiction 
-
-Number three. Proofs by counterexample 
+1, Proofs about sets 
+2, Proofs by contradiction 
+3, Proofs by counterexample 
 
 A way to prove a statement of the form if then C is to prove the statement H and not C implies falsehood. 
