@@ -108,18 +108,18 @@ The only important constraint on what can be a language is that all alphabets ar
 
 A problem is the question of deciding whether a given string is a member of some particular language. 
 Given a string w, in set of all alphabets, decide whether or not w is in language L. 
-It is common to describe a language using the set former. 
+It is common to describe a language using the set former - {w | some expression about w}
 
-This expression is read as "the set of words such that (whatever is said about W to the right of the vertical bar)". 
-
+Set former: This expression is read as "the set of words such that (whatever is said about W to the right of the vertical bar)". 
 It is also common to replace the string by some expression with parameters and describe the strings in the language by stating conditions on the parameters. 
 
 Summary of terms 
-
 Finite automata: Finite automata involves States and transitions among states in response to inputs. They're useful for building several different kinds of software. 
-
 Regular expressions: These are structural notation for describing the same patterns that can be represented by finite automata. Used for searching patterns in text or in file names. 
+Context free grammar: These are an important notation for describing the structure of programming languages and related sets of strings; 
+They are used to build the parser component of a compiler. 
 
-Context free grammar: These are an important notation for describing the structure of programming languages and related sets of strings; They are used to build the parser component of a compiler. 
+During machines; Deductive proofs; Proving if then statements; Proving if and only if statements; Proving the contrapositive; Proof by contradiction; 
+Counterexamples; Inductive proofs; Structural induction; Alphabets; Strings; Languages and problems.
 
-During machines; Deductive proofs; Proving if then statements; Proving if and only if statements; Proving the contrapositive; Proof. By contradiction; Counterexamples; Inductive proofs; Structural induction; Alphabets; Strings; Languages and problems. 
+------------------------------------------------------------------------------------END OF CHAPTER 1------------------------------------------------------------------------------------
