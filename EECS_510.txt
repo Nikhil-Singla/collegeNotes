@@ -69,48 +69,45 @@ Additional forms of proof
 3, Proofs by counterexample 
 
 A way to prove a statement of the form if then C is to prove the statement H and not C implies falsehood. 
+
 Theorems generally are statements about an infinite number of cases, perhaps all values of its parameters 
-
-To resolve whether a theorem is true or not, we may try to prove the theorem, or alternatively try to prove that the statement is false 
-
-Statements that have no parameters or apply to only a finite number of values of its parameters are called observations 
+To resolve whether a theorem is true or not, we may try to prove the theorem, or alternatively try to prove that the statement is false. 
+Statements that have no parameters or apply to only a finite number of values of its parameters are called observations. 
 
 Inductive proofs 
+There is special form of proof called inductive that is essential when dealing with recursively defined objects. 
+In automata theory, we also need inductive proofs about such recursively defined concepts as trees and expressions of various sorts. 
 
-There is special form of proof called inductive that is essential when dealing with recursively defined objects. In automata theory, we also need inductive proofs about such recursively defined concepts as trees and expressions of various sorts. 
+In automata theory, there are several recursively defined structures about which we need to prove statements. 
+Like induction, all recursive definitions have a basis case where one or more elementary structures are defined, 
+and an inductive case where one or more complex structures are defined in terms of previously defined structures. 
 
-In automata theory, there are several recursively defined structures about which we need to prove statements. Like induction, all recursive definitions have a basis case where one or more elementary structures are defined, and an inductive case where one or more complex structures are defined in terms of previously defined structures. 
-
-Sometimes we cannot prove a single statement by induction, but rather need to prove a group of statements together by induction of N. This is called mutual induction. 
-
-Strictly speaking, proving a group of statements is no different from proving the conjunction (logical and) of all the statements. When there are really several independent statements to prove, it is generally less confusing to keep the statements separate and to prove them all in their own paths of the basis and inductive steps. We call this sort of proof mutual induction. 
+Sometimes we cannot prove a single statement by induction, but rather need to prove a group of statements together by induction of N.  
+Strictly speaking, proving a group of statements is no different from proving the conjunction (logical AND) of all the statements. 
+When there are really several independent statements to prove, it is generally less confusing to keep the statements separate and 
+to prove them all in their own paths of the basis and inductive steps. We call this sort of proof mutual induction. 
 
 Central concepts of automata theory 
+Alphabet: Finite set of symbols
+Strings: A list of symbols from an alphabet. 
+Language: a set of strings from the same alphabet. 
 
-Alphabet. Of symbols, strings, a list of symbols from an alphabet. Language: a set of strings from the same alphabet. 
-
-An alphabet is a finite nonempty set of symbols. We use the summation symbol for alphabet. 
+An alphabet is a finite nonempty set of symbols. We use the summation symbol for alphabet.
 
 A string, or sometimes word, is a finite sequence of symbols chosen from some alphabet. 
-
 The empty string is the string with zero occurrences of the symbols. This string, denoted epsilon, is a string that may be chosen from any alphabet. 
-
 It is common to say that the length of a string is the number of symbols in the string. You can also expect to use number of positions. 
-
-The standard notation for the length of a string w is |w|. Foreign alphabet. We can express the set of all strings of a certain length by using the exponential notation. Epsilon is the only string whose length is 0. The set of all strings over an alphabet is conventionally denoted by raising it to the power of a *. 
-
+The standard notation for the length of a string w is |w|. For any alphabet, we can express the set of all strings of a certain length by using the exponential notation. 
+Epsilon is the only string whose length is 0. The set of all strings over an alphabet is conventionally denoted by raising the symbol (summation) to the power of a *. 
 Sometimes we wish to exclude the empty string from the set of strings, which is denoted by raising it to the power of + 
-
 Commonly, we shall use lowercase letters at the beginning of the alphabet to denote symbols, and lowercase letters near the end of the alphabet to denote strings. 
 
 A set of strings, all of which are chosen from some set of alphabets* is called a language. 
-
-L is set to be the language over the alphabet. Notice that the language over the alphabet needs not include strings with all the symbols of the alphabet. The only important constraint on what can be a language is that all alphabets are finite. 
+L is set to be the language over the alphabet. Notice that the language over the alphabet needs not include strings with all the symbols of the alphabet. 
+The only important constraint on what can be a language is that all alphabets are finite. 
 
 A problem is the question of deciding whether a given string is a member of some particular language. 
-
-Given a string W, in set of all alphabets, decide whether or not w is in language L. 
-
+Given a string w, in set of all alphabets, decide whether or not w is in language L. 
 It is common to describe a language using the set former. 
 
 This expression is read as "the set of words such that (whatever is said about W to the right of the vertical bar)". 
