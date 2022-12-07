@@ -33,3 +33,30 @@ For behaviour of NFA:
 Definition: If machine ends in any set of states which at least one of them is the final state, then NFA accepts.
 
 Video 13:
+L = Set of strings that start with 0.
+1) Sometimes NFA looks similar to DFA without the fluff, that is fine and completely possible!
+2) If a state enters φ, that is a dead configuration. 
+Video 14:
+More examples of NFA's.
+
+Video 15:
+To convert => Every DFA is an NFA, but not every NFA is a DFA. And also, there is an equivalent DFA for every NFA.
+So if you have a DFA, its technically also a NFA, but if you have a NFA, you might need to convert it to a DFA.
+Proof: Only the 𝝳 (Transition Function) was different.
+For DFA it was Q x Σ -> Q but for NFA it was Q x Σ -> 2ᵠ
+And Q is a part of 2ᵠ so DFA is a part of the NFA.
+
+Steps: Make state transition Diagram
++   0   1
+A   B   φ
+B   B   B
+
+Replace the empty state with dead state, C maybe and then also mention the inputs for any new states generated.
++   0   1
+A   B   C
+B   B   B
+C   C   C
+
+Where A is the starting state and B is the final state.
+Hence we converted the NFA to equivalent DFA.
+Video 16: 
