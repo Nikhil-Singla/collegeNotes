@@ -32,6 +32,7 @@ Language (L3: Infinite Set) = Set of strings that begin with 0 = {0, 01, 001, 01
 
 Powers of Σ:
 ¹²³⁴⁵⁶⁷⁸⁹⁰
+₀₁₂₃₄₅₆₇₈₉
 Σ = {0, 1}
 Σ⁰ = Set of all strings of length 0 = {ε}
 Σ¹ = Set of all strings of length 1 = {0, 1}
@@ -47,3 +48,34 @@ Cardinality: Number of elements in the set.
 Σ* = Σ⁰ U Σ¹ U Σ² U Σ³ . . . U Σⁿ = Set of all possible strings of all lengths using the alphabets Σ
 
 Video 3:
+Finite state machines = Finite Automata [Simplest model and limited memory]
+2 Types : FA (Finite Automata) with Output and FA without Output
+
+FA w/ Output => Moore Machine and Mealy Machine
+FA w/o Output => DFA (Deterministic FA), NFA (Non-Deterministic FA) and ε-NFA (Epsilon NFA)
+
+DFA: Deterministic Finite Automata
+(Diagram in Video)
+Edges = Arrows between states.
+State = Circles with letter between them
+Labelling on the edges = Value of input to transition between the states
+Start State = Using an arrow from nowhere to point to the state
+End State = Double Circle for a state
+
+Defined using 5 tuples: (Q, Σ, q₀, F, 𝝳)
+Q = Set of all states
+Σ = Inputs
+q₀ = Start State
+F = Set of final states
+𝝳 = Transition function that maps Q x Σ -> Q
+
+Q = {A, B, C, D}
+Σ = {0, 1}
+q₀ = A
+F = {D}
+𝝳 = 
+.   0   1
+A   C   B
+B   D   A
+C   A   D
+D   B   C
