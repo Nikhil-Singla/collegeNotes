@@ -1,4 +1,5 @@
 Youtube: Neso Academy
+Video 1:
 Introduction to Theory of Computation:
 -> Most fundamental courses of Comp Sci: Subject about what things you can compute mechanically and with how fast/how much space taken.
 
@@ -144,3 +145,4 @@ NFA is literally opposite.
 2) Next state may be chosen randomly
 3) All states may be chosen in parallel
 4) Also accept an empty input and go to a different state!!
+
