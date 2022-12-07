@@ -136,3 +136,5 @@ Two theorems:
 A U B = C => C is also a regular language
 2) The class of regular language is closed under concatenation.
 
+Video 10:
+NFA (Non-deterministic Finite automata)
