@@ -17,3 +17,33 @@ Layers:
     Language actually refers to a set of strings.
 3. Turing Machine 
 4. Undecidable : Problems that cannot be solved
+
+Video 2:
+Finite state machine - 
+Symbol - a, b, c, 1, 2, 3
+Alphabet - Collection of symbols (Denoted by Σ) {a, b}, {d, e, f, g}, {0, 1, 2 . . .}
+String - Sequence of symbols. eg: a, b, aa, bb, ab, 01, 1011
+Language - Set of strings 
+
+Example: if Σ = {0, 1}
+Language (L1: Finite Set) = Set of strings of length 2 = {00, 01, 10, 11}
+Language (L2: Finite Set) = Set of strings of length 3 = {000, 001, 010, 011, 100, 101, 110, 111}
+Language (L3: Infinite Set) = Set of strings that begin with 0 = {0, 01, 001, 010, 000, 000010 . . .}
+
+Powers of Σ:
+¹²³⁴⁵⁶⁷⁸⁹⁰
+Σ = {0, 1}
+Σ⁰ = Set of all strings of length 0 = {ε}
+Σ¹ = Set of all strings of length 1 = {0, 1}
+Σ² = Set of all strings of length 2 = {00, 01, 10, 11}
+Σ³ = . . .
+Σⁿ = Set of all strings of length n.
+
+Cardinality: Number of elements in the set. 
+Σ⁰ = 1
+Σ¹ = 2
+Σ² = 4 . . .Σⁿ = 2ⁿ
+
+Σ* = Σ⁰ U Σ¹ U Σ² U Σ³ . . . U Σⁿ = Set of all possible strings of all lengths using the alphabets Σ
+
+Video 3:
