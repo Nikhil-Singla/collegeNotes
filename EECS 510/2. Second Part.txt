@@ -21,3 +21,15 @@ We have a start state and end state
 Differences =>
 Doesn't need to be complete to have the NFA finished.
 May have multiple next states.
+
+Video 12:
+For behaviour of NFA:
+1) Always start from the starting state
+2) If there is only one possible transition, then go to that
+3) If there are two transitions, you need to consider from multiple states like a branching tree.
+4) YOU NEED TO CHECK FOR BOTH STATES!
+5) If there is no transition, it goes to φ
+6) If at any point it reaches accepting state at the end of input, that string is accepted.
+Definition: If machine ends in any set of states which at least one of them is the final state, then NFA accepts.
+
+Video 13:
