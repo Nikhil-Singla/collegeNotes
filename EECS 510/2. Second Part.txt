@@ -1,3 +1,23 @@
 Youtube: Neso Academy
 Video 11:
-Definition of NFA - 
+Definition of NFA => 
+Defined using 5 tuples: (Q, Σ, q₀, F, 𝝳)
+Q = Set of all states       -> {A, B}
+Σ = Input                   -> {0, 1}
+q₀ = Start/Initial State    -> A
+F = Final states            -> B
+𝝳 = Maps Q x Σ -> 2ᵠ (where that symbol is Q. Just no superscript version in normal language)
+2 ^ Q is just the power set of Q, ie all the subsets of Q. The number of elements in this set is also equal to 2 ^ number of elements in Q.
+If we have above Q. Here the 2ᵠ indicates how A can go to A, B, AB, or φ as all possible situations in the worst case scenario
+
+.    0      1
+A   A,B     A
+B    φ      φ
+
+Comparison to DFA
+Similarities => 
+We have a start state and end state
+
+Differences =>
+Doesn't need to be complete to have the NFA finished.
+May have multiple next states.
