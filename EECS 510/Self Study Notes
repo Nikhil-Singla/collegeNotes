@@ -138,3 +138,9 @@ A U B = C => C is also a regular language
 
 Video 10:
 NFA (Non-deterministic Finite automata)
+DFA is Determined, We can find the next state from the current state, only 1 unique next state, no choices/randomness, simple and easy to design
+NFA is literally opposite.
+1) Can have multiple next states
+2) Next state may be chosen randomly
+3) All states may be chosen in parallel
+4) Also accept an empty input and go to a different state!!
