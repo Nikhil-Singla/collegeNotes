@@ -90,3 +90,10 @@ A.B     A    A.B
 * Since after here, there's no way to reach state B, no need to draw for B
 
 This method is known as SUBSET CONSTRUCTION METHOD
+
+Video 17:
+1) Obviously during union operation, repeated elements are just removed as a part of the union function.
+2) If you union two individual elements, B and C for example, you give rise to a third element, BC which is formed from their Union
+3) NEVER FORGET that you then also have to define for the BC element the state transition diagram in 𝝳
+4) Don't forget about dead states too ofc. They always end up on themselves as trapped states, and replace φ in NFA.
+5) Final states are all the states that contain the final state in NFA equivalent. For example, if its C, then for the DFA, it has to be C, BC, and AC as well if present
