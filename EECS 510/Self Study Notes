@@ -117,3 +117,22 @@ Eg: L = {ababba ababba} = Language where the first five inputs are repeated.
 Cannot be designed using a FSM.
 Eg: L = {aⁿbⁿ} = Language where there's a specific number of a's followed by b's
 Cannot be designed using a FSM.
+
+Video 9: ¹²³⁴⁵⁶⁷⁸⁹⁰ ₀₁₂₃₄₅₆₇₈₉
+Operations on Regular Languages: 
+1. Union => A U B => { x | x ε A or x ε B}
+2. Concatenation => A o B =>> {xy | x ε A and y ε B}
+3. Star => A* => {x₁x₂x₃x₄ ... xₖ | k ≥ 0 and each x ε A}
+
+Eg: 
+A = {pq, r}
+B = {t, uv}
+A U B = {pq, r, t, uv}
+A o B = {pqt, pquv, rt, ruv}
+A* = {ε, pq, r, pqr, rpq, pqpq, rr, pqpqpq, rrr . . .} - Infinite Set!
+
+Two theorems:
+1) The class of regular languages is closed under union.
+A U B = C => C is also a regular language
+2) The class of regular language is closed under concatenation.
+
