@@ -99,3 +99,13 @@ Video 6:
 1) Try to design a simpler problem when it gets too complex.
 2) Keep wary of tricky questions. ALWAYS CHECK HOW YOU CAME TO A PARTICULAR STATE AND WHAT THE INPUT WAS AT THAT TIME.
 3) You can achieve negation of DFA's by Flipping the states from Final to Non-Final and Vice Versa.
+
+Video 7:
+How to figure out what a DFA recognizes -
+Note before: DFA without a state/input direction follows it directly to DEAD STATE!
+1) Test with various inputs.
+2) Make a list of possible accepted inputs by following the path.
+3) Find a couple of dead states.
+4) Draw inferences from that.
+5) Summarize or generalize it directly without trying much to modify the original inference.
+6) Edit it slowly if needed/possible
