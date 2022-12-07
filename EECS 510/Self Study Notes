@@ -1,0 +1,19 @@
+Youtube: Neso Academy
+Introduction to Theory of Computation:
+-> Most fundamental courses of Comp Sci: Subject about what things you can compute mechanically and with how fast/how much space taken.
+
+Things you can compute:
+Strings which follow certain rules (eg. Binary strings that end in 0)
+Machine that accepts all valid Java code (eg. Compilers)
+Compilers arose from theory of computation
+
+Things you cannot compute:
+Program that accepts all valid java codes and never goes into infinite loop. (Cannot check for infinite loop)
+
+Subject: Design systems that take input and return yes or no.
+Layers: 
+1. FSM : Finite state machine - Simplest model and limited memory/calculations)
+2. CFL : Context free language - More powerful, slightly higher level computations) 
+    Language actually refers to a set of strings.
+3. Turing Machine 
+4. Undecidable : Problems that cannot be solved
