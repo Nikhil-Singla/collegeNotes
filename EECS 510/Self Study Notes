@@ -81,7 +81,7 @@ C   A   D
 D   B   C
 
 Video 4:
-To make creation of a DFA easier:
+To make designing/construction of a DFA easier:
 1) Start by writing out the elements of the DFA set.
 2) Create the start state.
 3) Check for both inputs from the start state.
@@ -94,3 +94,8 @@ Video 5:
 1) Initial state after writing the elements of set
 2) Label the arrows/edges properly for inputs
 3) Dead states are also called trapped states
+
+Video 6:
+1) Try to design a simpler problem when it gets too complex.
+2) Keep wary of tricky questions. ALWAYS CHECK HOW YOU CAME TO A PARTICULAR STATE AND WHAT THE INPUT WAS AT THAT TIME.
+3) You can achieve negation of DFA's by Flipping the states from Final to Non-Final and Vice Versa.
