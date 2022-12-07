@@ -80,6 +80,7 @@ B   D   A
 C   A   D
 D   B   C
 
+Video 4:
 To make creation of a DFA easier:
 1) Start by writing out the elements of the DFA set.
 2) Create the start state.
@@ -88,3 +89,8 @@ To make creation of a DFA easier:
 5) Dont forget to fill out the self loops and other inputs for every state.
 
 Dead State = Where the input cannot proceed forward to the final state. If a string gets trapped in dead state, its rejected.
+
+Video 5:
+1) Initial state after writing the elements of set
+2) Label the arrows/edges properly for inputs
+3) Dead states are also called trapped states
