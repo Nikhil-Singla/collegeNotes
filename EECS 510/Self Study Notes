@@ -31,8 +31,7 @@ Language (L2: Finite Set) = Set of strings of length 3 = {000, 001, 010, 011, 10
 Language (L3: Infinite Set) = Set of strings that begin with 0 = {0, 01, 001, 010, 000, 000010 . . .}
 
 Powers of Σ:
-¹²³⁴⁵⁶⁷⁸⁹⁰
-₀₁₂₃₄₅₆₇₈₉
+¹²³⁴⁵⁶⁷⁸⁹⁰ ₀₁₂₃₄₅₆₇₈₉
 Σ = {0, 1}
 Σ⁰ = Set of all strings of length 0 = {ε}
 Σ¹ = Set of all strings of length 1 = {0, 1}
@@ -109,3 +108,12 @@ Note before: DFA without a state/input direction follows it directly to DEAD STA
 4) Draw inferences from that.
 5) Summarize or generalize it directly without trying much to modify the original inference.
 6) Edit it slowly if needed/possible
+
+Video 8:
+Regular Language: A language is regular iff a Finite State Machine recognizes it.
+Languages that require memory/ not recognized by a DFA are non regular languages.
+-> Memory of FSM is limited, it cannot count/store strings except only the current state.
+Eg: L = {ababba ababba} = Language where the first five inputs are repeated.
+Cannot be designed using a FSM.
+Eg: L = {aⁿbⁿ} = Language where there's a specific number of a's followed by b's
+Cannot be designed using a FSM.
