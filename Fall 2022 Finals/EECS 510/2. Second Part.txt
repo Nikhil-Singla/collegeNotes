@@ -46,7 +46,7 @@ Proof: Only the 𝝳 (Transition Function) was different.
 For DFA it was Q x Σ -> Q but for NFA it was Q x Σ -> 2ᵠ
 And Q is a part of 2ᵠ so DFA is a part of the NFA.
 
-Steps: Make state transition Diagram
+Steps: Make state transition Diagram for the NFA
 +   0   1
 A   B   φ
 B   B   B
@@ -59,4 +59,34 @@ C   C   C
 
 Where A is the starting state and B is the final state.
 Hence we converted the NFA to equivalent DFA.
+
 Video 16: 
+Steps: Make state transition Diagram for the NFA
++   0     1
+A   A   {A,B}
+B   φ     φ
+
+** WHEN WE HAVE MULTIPLE INPUTS, COMBINE THEM INTO 1 ** for the DFA
+Also, no need to write states that cannot be reached from the start states during input.
++       0     1
+A       A    A.B
+B - Not needed as cannot be reached from a
+A.B     ?     ?
+
+Now to complete the above table, you need to look at the NFA and perform union operations on the individual states.
+So A union B or A.B means performing union function for the 0 and 1 inputs, hence NFA becomes
++     0     1
+A     A   {A,B}
+B     φ     φ
+A.B   A   {A,B}
+
+After this, convert to the DFA table!
++       0     1
+A       A    A.B
+B - Not needed as cannot be reached from a
+A.B     A    A.B
+
+* Here, A.B isn't A union B but a third variable, similar to AB but easier to understand.
+* Since after here, there's no way to reach state B, no need to draw for B
+
+This method is known as SUBSET CONSTRUCTION METHOD
