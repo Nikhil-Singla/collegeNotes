@@ -1,0 +1,14 @@
+Datastructures and Algorithms:
+
+Module 0: Fundamentals
+ADT is a mathematical abstraction of a data structure. It refers to both the data and the methods.
+- For example: Vector, Queue, Stack, Hash Table, etc.
+- Its object primarily is an array
+- Methods usually have at least one pointer to retrieve a value of some kind, iterator to a value, and usually a size() to get the size of the ADT
+ADT Use: Implementation details and analyze efficiency.
+
+Simple ADTs include: list, queue, stack, and hash table
+– Tree-based ADTs: search trees, heaps, disjoint sets
+– Graph ADTs
+– Sorting algorithms
+
