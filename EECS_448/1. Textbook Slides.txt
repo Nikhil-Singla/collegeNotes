@@ -17,8 +17,18 @@ Company/Individual design and implement features that realise opportunity and wi
 Software development company are responsible for deciding the development timescale, features and changes.
 Rapid delivery of product is essential to capture the market.
 
+Software product line
+A set of software products that share a common core. Each member of the line has customer-specific adaptations that may be used to implement custom system for customer
+that cannot be met by generic software.
 
+Platform
+Software product that includes functionality to build new applications on it. Example: Facebook/Facebook apps. 
 
+Software Execution Models:
+1) Stand-Alone - Executes entirely on customer's computer
+2) Hybrid - Part of it is on customer's computer, and some features are implemented on developer's server
+3) Software Service - All services on server and accessed through browser/mobile app
+Various splits of User Interface, Product functionality, User data, and Product updates. Hybrid includes User Data Backups
 
 Relation between UML and programming languages: 
 UML = Concepts without counterparts
