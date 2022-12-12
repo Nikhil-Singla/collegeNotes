@@ -30,6 +30,7 @@ Software Execution Models:
 3) Software Service - All services on server and accessed through browser/mobile app
 Various splits of User Interface, Product functionality, User data, and Product updates. Hybrid includes User Data Backups
 
+
 Relation between UML and programming languages: 
 UML = Concepts without counterparts
 - Java: Language specific details
@@ -38,3 +39,59 @@ Union = Directly mappable parts
 / implies derived attribute
 $ implies static attribute
 
+---------------------------------------------------------------------------------------------------------
+
+Software services:
+1) Software service: Software component that can be accessed via remote computer. Give input, produces output.
+    Accessible through published interface, implementation hidden
+    No internal state maintained. Information stored in database or maintained by service requestor.
+2) When request made, state information may be included as a part of the request, updated information returned
+as a part of the result.
+3) Services dynamically reallocated, and replicated across servers.
+
+1990's - Service oriented computing
+early 200's - 'big' Web Services
+XML Based protocols:
+    SOAP - Service interaction
+    WSDL - Service description
+Software services don’t need the generality inherent in web service protocols. 
+Modern service systems use lighter interaction protocols with lower overhead and faster execution.
+
+Microservices:
+Small-scale, stateless services.
+Have single responsibility.
+Combined to create applications.
+Independant with own database and UI management code.
+Software require microservice architecture.
+Adaptable, scaleable, and resilient.
+
+Example: Registration, System Authentication, Two factor, UID/Password, Reset forgotten.
+Each feature can be implemented as a separate service with shared database holding authentication information.
+
+Too large to be microservice, need to be broken down.
+User registration: Setup login id, Setup password, Setup recovery info, Setup two-factor, Confirm registration.
+Authenticate: Get id, Get password, Check credentials, Confirm authentication.
+
+Authentication has three parts-
+    UID Management <---> UID Data
+    Password Management <---> Password Data
+    User Info Management <---> User data
+
+Characteristics of microservices:
+Self contained - No external dependencies. Manage own data and implement own interface.
+Lightweight - Lightweight protocols for communication means low overhead.
+implementation-Independant - May be implemeneted using different programming languages and technologies. 
+Independently deployable - Runs own process and independently deployable using automated systems.
+Business-oriented - Implement business needs and capabilities than providin technical service.
+Well designed = High Cohesion and Low Coupling. 
+    Cohesion > Measure of number of relationships parts of components have among them. High cohesion is that all parts
+    for functionality of component are included in the component.
+    Coupling > Measure of number of relationships between components in the system. Low coupling means components aren't
+    related much.
+Each microservice should have a single responsibility, and it should do it well. (Bit hard to define, not necessarily
+single functional activity)
+
+
+Microservice Communication
+Microservices Communicate by exchanging messages. Messages sent includes admin info, service request and data required
+Services return a response to the service request message.
