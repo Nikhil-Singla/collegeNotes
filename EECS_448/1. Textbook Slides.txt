@@ -6,7 +6,18 @@ Software Engineering Techniques = One-off, Custom Software Systems
 Customer has Problems (generates) Requirements for Customer and Developer (implemented by) Developer through Software (helping with) Customers Problem
 
 Project-Based Software Engineering
-Starting point: Set of ‘software requirements’ wned by an external client to support their business processes
+Starting point: Set of ‘software requirements’ wanted by an external client to support their business processes
+Developed by: Company (contractor) who designs and implements a system to deliver functionality.
+Customer may request changes that contractor must reflect.
+Custom software has a long lifecycle of support (10 years).
+
+Product Software Engineering
+Starting point: Business opportunity identified by individual or company, who then develop to take advantage of this opportunity.
+Company/Individual design and implement features that realise opportunity and will be useful.
+Software development company are responsible for deciding the development timescale, features and changes.
+Rapid delivery of product is essential to capture the market.
+
+
 
 
 Relation between UML and programming languages: 
