@@ -12,3 +12,20 @@ Simple ADTs include: list, queue, stack, and hash table
 – Graph ADTs
 – Sorting algorithms
 
+C++ features:
+– Pointers and references, parameter passing
+– C++ objects
+– The Big Five: Fundamental methods for data structure ADTs
+– Template
+– Function as parameter and Function object
+
+Pointer: Variable that stores a memory address where another object resides. 
+* is used to declare a pointer/indicate that a variable is an object.
+
+C++ relies on the programmer to manage memory usage. Memory allocation with new. Memory collection with delete.
+Ideally, collect all allocated by not losing track of where variables initially point to called a memory leak.
+
+Access data with that pointer points to with x. You can also use it to modify x.
+Pointers can also be assigned to another pointer to point to the same location.
+Address of a variable can be accessed using &. 
+If a pointer points to an object, we can use -> to access its members.
