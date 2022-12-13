@@ -30,7 +30,6 @@ Software Execution Models:
 3) Software Service - All services on server and accessed through browser/mobile app
 Various splits of User Interface, Product functionality, User data, and Product updates. Hybrid includes User Data Backups
 
-
 Relation between UML and programming languages: 
 UML = Concepts without counterparts
 - Java: Language specific details
@@ -91,7 +90,24 @@ Well designed = High Cohesion and Low Coupling.
 Each microservice should have a single responsibility, and it should do it well. (Bit hard to define, not necessarily
 single functional activity)
 
-
 Microservice Communication
 Microservices Communicate by exchanging messages. Messages sent includes admin info, service request and data required
 Services return a response to the service request message.
+
+Microservice architecture is architectural style - a tried/tested way of implementing a logical software architecture.
+Addresses 2 problems w/ monolithic application - whole system rebuilt and redeployed over small change, changes might 
+adversely affect other components. Demand on system increase, whole system needs scaled even if demand is localized
+only to most popular system functions.
+
+Benefits:
+Self-contained and run in separate processes.
+Cloud based: Deployed in own container. Stopped/restarted without affecting everything else.
+Demand of service increase, replicas quickly created. Much cheaper than scaling up.
+
+Decomposition guidelines:
+    - Balance fine-grain functionality and system performance: Limited changes to fewer services, but causes more server
+    communication to implement functionality. Slows down system.
+    - Follow common closure principal: Similar elements located in same service. New changes affect single service.
+    - Associate service with business capabilities: Identify services required to support each business capability.
+    - Design services with access to only the need-to-have data.
+    
