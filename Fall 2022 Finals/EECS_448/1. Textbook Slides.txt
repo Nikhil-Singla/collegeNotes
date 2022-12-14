@@ -111,3 +111,6 @@ Decomposition guidelines:
     - Associate service with business capabilities: Identify services required to support each business capability.
     - Design services with access to only the need-to-have data.
     
+Services communicate information data input output from request. Designing standard key, synchronity, method direct or broker, protocol.
+Synchronous - A request, suspend B process and return resume. 
+Asynchronous - 
