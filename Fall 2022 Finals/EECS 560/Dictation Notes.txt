@@ -16,3 +16,13 @@ WHILE vertices remain unvisited:
     NEXT unvisited neighbour vertex
     Add the current vertex to the list of visited vertex
 END WHILE
+
+Hash function design:
+Essential Requirements - 
+1) The hash function must distribute the hash value evenly on the hash table
+2) The hash function must be computable in constant time (otherwise we would not have the expected time complexity)
+
+AVL Tree is due to Adelson, Velskii, and Landis.
+the AVL property: for each node, the height of its left subtree and the height of its right subtree cannot differ by more than 1
+• A binary search tree that satisfies the AVL property is called an AVL tree
+• An AVL tree guarantees O(log n) search/insert/remove time
