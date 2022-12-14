@@ -1,0 +1,18 @@
+Dijkstra's Algorithm: Greedy Method
+Dijkstra's Shortest Path Medthod
+
+Weighted directed/undirected graphs.
+
+Pseudocode:
+Let start distance from start vertex = 0
+Start distance from all other vertices = infinity
+WHILE vertices remain unvisited:
+    Visit unvisited vertext with smallest known distance from start vertex (current vertex)
+    FOR each unvisited neighbour of the current vertex
+        Calculate distance from start vertex
+        IF distance from start vertex is less than the known distance
+            Update the shortest distance to this vertex
+        end if
+    NEXT unvisited neighbour vertex
+    Add the current vertex to the list of visited vertex
+END WHILE
