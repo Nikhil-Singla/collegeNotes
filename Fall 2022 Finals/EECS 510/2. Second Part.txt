@@ -97,3 +97,47 @@ Video 17:
 3) NEVER FORGET that you then also have to define for the BC element the state transition diagram in 𝝳
 4) Don't forget about dead states too ofc. They always end up on themselves as trapped states, and replace φ in NFA.
 5) Final states are all the states that contain the final state in NFA equivalent. For example, if its C, then for the DFA, it has to be C, BC, and AC as well if present
+
+Video 20:
+Minimization of DFA - Required to obtain minimal version of DFA with minimum number of states possible.
+Use equivalence test. Two sets are equivalent if both seeing a particular input go to the same final state F or don't go to the same state.
+
+If |X| = 0, then A and B are 0 equivalent.
+. . . if |X| = n, then A and B are n equivalent.
+This property is used to combine DFA's using the table for the DFA.
+
+Video 21:
+Start by writing 0 equivalence.
+Pair all the non-final states together and final states as another set.
+Write 1 equivalence using 0 equivalence. Check where A and B go and if they fall in the same set, then they are equivalent.
+You go till the same equivalent row repeats. Once it does, that's the end of pairing.
+
+Video 22: 
+You need to compare each and every element with other states if they happen to be non-equivalent to one another.
+
+Video 23:
+For multiple final states, we do the same, but group final states together as said before previously.
+Check if the states in the same set are equivalent or not. 
+If A is equivalent to B and C is equivalent to B, then A is also equivalent to C.
+Each set becomes a state. And the directions just go to the set containing that specific state.
+
+Video 24:
+Example of minimization when there are unreachable states involved. [Unreachable if no way to reach from initial state]
+For this, just remove the unreachable state F, and minimize with everything else.
+
+Video 25:
+Myhill Node theorem - Table filling method.
+1.    Draw a table for all pairs of state (P,Q)
+2.    Mark all pairs where P belongs to final state, and Q doesn't belong to final state.
+3.    If there are any unmarked pairs, such that transition of P on x and Q on x is marked, then mark (P,Q). Repeat till no more markings left
+4.    Combine unmarked pairs and make single state in DFA.
+
+- Draw a grid. And remove the top half from diagonal. We don't need (A,A), (B,B) ... etc pairs.
+- If one is a final state, and other is not, mark it in grid.
+- Keep doing this for round 1.
+- Transition checking, for pair (B,A) check (B, input 0) -> A and (A, input 0) -> B
+So AB is where (B,A) pair goes on input 0. Check if AB is marked, if it isn't, then don't mark. 
+Now check for input 1, we see it goes to (B,1) -> D, (A,1) -> C. DC is unmarked, don't do anything.
+Also, if you get (A,B , 1) -> E , ie both go to E on input 1, then it remains untouched. 
+- Do this for all cells, and repeat till you don't mark 
+- Final answer just combine all states on the diagram and you're good to go.
