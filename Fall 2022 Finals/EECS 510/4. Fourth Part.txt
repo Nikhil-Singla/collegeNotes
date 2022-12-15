@@ -1,0 +1,77 @@
+Youtube: Neso Academy
+Video 49:
+Using Identities
+
+Video 50:
+Designing regex over language {a, b}
+1) Length exactly 2
+2) At least 2
+3) At most 2
+
+1) aa + ab + ba + bb = a(a+b) + b(a+b) = (a+b)(a+b)
+Here it gets a string of exactly 2. For exactly 3, add another. Then add another per extra exactly.
+
+2) At least 2 has to be (a+b)(a+b)(a+b)* so we have at least 2 of (a OR b) and then as many as needed.
+
+3) To make it at most, the first or the second string could just be ε which should negate them to 0.
+So it is (ε + a + b)(ε + a + b). Whenever its Epsilon, the length decreases by 1...
+
+Video 51:
+Regex from NFA.
+- Write down all the equations of the NFA.
+eg: Just check the incoming transition and input. If q2 is going to q3 with an input a, then q3 = q2 concatenation a
+eg: q2 = q1a + q2b + q3b
+eg: q1 = ε + q1a + q2b [ε for empty state as its coming from start state]
+- Substitute respective values and simplify. 
+REMEMBER: R = Q + RP, SO R = QP* by Ardens theorem.
+- Use identities to simplify everything and then you get the final step
+- For the final step, after having all the values, substitute everything into the final state equation.
+
+Video 52 and 53: FOR MULTIPLE FINAL STATES:
+Perform the union operations for their expressions and you will get the same answer. That is, "+"
+
+Video 54: Regex to Finite Automata
+(a + b) = 2 states A and B, and A goes to B on getting A OR B.
+(a . b) or (ab) = 3 states, A goes to B on a and then C on getting b. 
+a* = State goes to itself on getting a.
+
+Video 55: Example
+And operation goes to new state and closure makes a self loop
+Concatenation within a closure represents LOOP but WITH THE AND statement. So loop but the state has to transition due to inputs. 
+
+ALWAYS WRITE SOME EXAMPLES FROM REGEX TO TEST.
+
+Video 60: PUMPING LEMMA
+A has a pumping length 'P' such that any string "S" where |S| >= P may be divided into 3 parts S = x y z. 
+Such that following must be true
+
+1. x y^i z ε A for any i >= 0
+2. |y| >= 0
+3. |xy| <= P
+
+Video 63: Regular Grammar
+Noam Chomsky gave grammar.
+Type 0, 1, 2 and 3
+
+Type 3 = Regular Grammar [Finite State Automata]
+Type 2 = Context Free Grammar [Push Down Automata]
+Type 1 = Context Sensitive Grammar [Linear Bounded Automata]
+
+Grammar G can be defined using (V, T, S and P)
+V = Variable or Non-Terminal symbols
+T = Set of Terminal symbols
+S = Start Symbol
+P = Production rules for Terminals and Non Terminals
+Production rule has a -> b form where a and b are strings on V U T and atleast one symbol of "a" belongs to V
+Example G = ({S, A, B}, {a, b}, S, {S->AB, A->a, B->b})
+
+S -> AB
+. -> aB
+. -> ab
+This ab is designed using grammar and will be accepted.
+
+Regular Grammar
+Right Linear has production of the form A -> xB , A -> x where A,B ε V and x ε T.
+
+Left Linear is above but A -> Bx
+
