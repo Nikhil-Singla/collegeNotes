@@ -25,4 +25,4 @@ Essential Requirements -
 AVL Tree is due to Adelson, Velskii, and Landis.
 the AVL property: for each node, the height of its left subtree and the height of its right subtree cannot differ by more than 1
 • A binary search tree that satisfies the AVL property is called an AVL tree
-• An AVL tree guarantees O(log n) search/insert/remove time
+• An AVL tree guarantees O(log n) search/insert/remove times
