@@ -1,1 +1,15 @@
 Video 26:
+Example filling
+
+Video 27: Finite Automata with output.
+
+Mealy Machine. 6 tuples: 
+Q - Finite set of states
+Δ - Set of output Alphabets
+Σ - Finite set of non empty set of Input Alphabets
+q₀ - Initial/Start state
+λ - Output function : Σ x Q -> Δ
+𝝳 - Transition function : Q x Σ -> Q
+
+** SUPER IMPORTANT CONCEPT **
+So when we have 1/a on the number, it states that A on getting input 1, goes to A itself, AND PRODUCES OUTPUT b!!!
