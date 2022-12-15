@@ -71,4 +71,49 @@ Every other state gives output 0 so that we can use 1 to count.
 Video 33: Table to solve Moore machine.
 Rememeber properties, start state and the property that your output starts BEFORE EVEN THE INPUT.
 
-Video 34: Conversion of Moore to Mealy machine
+Video 34: Conversion of Moore to Mealy Machine
+Moore machine, Output associated with the states. Mealy machine, outputs associated with the transitions.
+Conversion is super simple, just check the output of the state the transition is going towards and then make that output the transition output.
+After this, remove the state outputs, and you will have the answer.
+
+Video 36:
+For table conversion, just have the state it will go to and the output next to that state to have the final answer.
+
+Video 37:
+Convert Mealy to Moore machine.
+Logically, just convert states into Ba and Bb for the outputs "a" and "b" and then convert the state diagrams using basic logic of the old B state for both Ba and Bb.
+Similarly for all other states where a change has to be made.
+
+Moore -> Mealy, states remain same.
+Mealy -> Moore, states increased. At max, x*y states where x is states and y is number of outputs.
+If there is something non-associated, then you can leave it as is. 
+
+Video 38:
+Start by making clear what the input, outputs are for a given problem. 
+In Mealy, output are associated with transitions. We need to associate them with states for Moore.
+
+Video 39: 2's complement Mealy to Moore.
+Just 3 states, one extra for B/0 and B/1 => state/outputs.
+Not exactly similar due to extra bit with the start state, but its okay. 
+
+Video 40:
+Using tables for conversion
+- Start by checking all the states and see if the state gives different outputs for certain inputs.
+- Example, if we have q1, that gives q1/0 sometimes, other times q1/1. So split the state into two states.
+- Draw the table logically with these two extra states.
+And then fill out the output column and then remove the transition outputs.
+
+Video 41:
+Epsilon NFA - Essentially you define an NFA with the extra case of what if you get no input. (or the input ε)
+Property - Every state on ε goes to itself ALONG with any other states mentioned otherwise...
+
+Video 42: To convert ε-NFA to equivalent NFA, 
+we need to check the state with ε* then with the input and then again with the ε* [ε* = Epsilon closure]
+ε* means all the states that can be reached from a particular state by seeing only the ε symbol
+For example, if A goes to B and B goes to C on seeing ε
+The ε* of A is A, B and C [Every state goes to itself on ε]
+We need to check the transition by threee steps as mentioned above when converting. 
+First obv check ε*, then for each of the states from ε*, check their respective values at a particular input, 0 or 1 [here], and then finally
+also check where these inputs go on ε* again. This way, the union of the final column gives all the possible states our given state travels to for 
+a particular input.
+For this, our FINAL STATES = All the states that can reach the final only by seeing the Epsilon state.
