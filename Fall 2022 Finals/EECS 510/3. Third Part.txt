@@ -1,3 +1,4 @@
+Youtube: Neso Academy
 Video 26:
 Example filling
 
@@ -13,3 +14,61 @@ q₀ - Initial/Start state
 
 ** SUPER IMPORTANT CONCEPT **
 So when we have 1/a on the number, it states that A on getting input 1, goes to A itself, AND PRODUCES OUTPUT b!!!
+
+Now we have outputs defined along with inputs and current state/transition! Output is defined by current input in the current state.
+
+Moore Machine:
+Q - Finite set of states
+Δ - Set of output Alphabets
+Σ - Finite set of non empty set of Input Alphabets
+q₀ - Initial/Start state
+λ - Output function : Q -> Δ
+𝝳 - Transition function : Q x Σ -> Q
+
+Here, only λ (lambda) changes now instead of being mapped to input. Its just mapped to the state itself. 
+This means that when the transition reaches a specific state, it produces an output from that state itself!!
+Here also, the start state, BEFORE ANY INPUT, gives an output to start us off. Then we check the inputs. 
+
+Mealy machine, on input of length 4, gives output of length 4. IE -> n length input = n length output
+Moore machine on the other hand means, n length input -> n+1 length output due to START state.
+
+Video 28: Construction of Mealy machine
+Example 1: 1's complement.
+Simple machine -> A start state, on input 1 gives output 0 and on input 0, gives output 1.
+One state is enough for the answer.
+
+Example 2: Print's "a" when sequence "01" is encountered in the input binary string.
+First construct the DFA that accepts 01 ending string.
+Then print the target state with output a, and then every other output can simply print b.
+
+Video 29:
+In Example 3 we can denote acceptance of a string by printing 1 at the end when we get the desired input, otherwise printing 0 when the alphabets range between a and b 
+and we need to get aa, bb to print a 1.
+
+Video 30:
+2's complement Mealy machine. Neglect last carry bit. The pattern arises that after you see the first 1, every bit after that is complemented for the final answer.
+
+MSB            LSB 
+ 1  0  0  0  1  0
+
+Read from Least Significant Bit to Most SB
+2's complement of above number = 011110
+
+We need 2 states, and send after 1 to a different state that complements stuff.
+
+Video 31: Construct Moore machine
+Only here, the output is associated with the states.
+Ex: Prints 'a' when we get sequence 01.
+Three states, A - B and C. A goes to B on getting 0 and B to C on getting 1. 
+A and B remain in other inputs, and for C, 0 goes to B, and for 1, goes to A. 
+And when we reach C, that's when we get 01, thus we output a on state C.
+Other two states will have a b state.
+
+Video 32: Moore machine that counts 'abb' in any input over {a, b}
+First construct DFA that accepts abb. And output the end of the DFA to be 1. At the end, we can count the number of 1's to count abb.
+Every other state gives output 0 so that we can use 1 to count.
+
+Video 33: Table to solve Moore machine.
+Rememeber properties, start state and the property that your output starts BEFORE EVEN THE INPUT.
+
+Video 34: Conversion of Moore to Mealy machine
