@@ -117,3 +117,35 @@ First obv check ε*, then for each of the states from ε*, check their respectiv
 also check where these inputs go on ε* again. This way, the union of the final column gives all the possible states our given state travels to for 
 a particular input.
 For this, our FINAL STATES = All the states that can reach the final only by seeing the Epsilon state.
+
+Video 43: Keep in mind the phi that goes nowhere.
+
+Video 45: Regular expressions
+Used to represent certain sets of strings in an algebraic fashion.
+Rules: Any termnial symbols, including empty and null symbols are regular expressions.
+Union of two regular expression is regular.
+Concatenation of two regular expression is also regular.
+Iteration/Closure of regex is also a regular expression, ie A* or R* etc.
+Regex over Σ are obtained by applying above rules as many times as needed.
+
+Video 46:
+{0, 1, 2} = 0 + 1 + 2 denotes => 0 or 1 or 2
+{^, ab} = ^ ab denotes => Empty symbol OR ab. When you have the empty symbol, you don't need to denote it in any way
+{abb, a, b, bba} = abb + a + b + bba 
+{^, 0, 00, 000. . .} = Closure of 0 = 0*
+{1, 11, 111, 1111. . . } = Not closure but = 1⁺ which excludes the empty set.
+ 
+Video 47:
+Identities of Regex
+1. ϕ + R = R
+2. ϕR + Rϕ = ϕ
+Note: Epsilon = ^ or ε.
+3. ^R = εR = R
+4. ε* = ε. ϕ* = ε
+5. R + R = r
+6. R*R* = R*
+7. RR* = R*R = R⁺ as concatenation with R excludes the empty 
+
+Video 48:
+P and Q are two Regex over Σ and P doesn't contain ε then R = Q + RP has a unique solution R = QP*
+Ardens theorem proof if needed.
