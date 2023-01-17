@@ -1,1 +1,4 @@
 Professor Fengjun:
+Security is popular, with broader impacts and covers a broad spectrum of topics.
+It's required and is the basics of information security.
+- Syllabus
