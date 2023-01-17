@@ -1,1 +1,9 @@
 Cyber Defense:
+Course webpage is available on Canvas
+Goal: Teach students the critical knowledge to administer and defend computer networks and systems.
+Usage to learn: Computer security tools
+Secure services, applications and operating 
+- Explanation of syllabus
+Don't be attackers:
+Unauthorized access is illigal, even if its unintentional
+Anything goes on these hosts. Get the login from Lab room.
