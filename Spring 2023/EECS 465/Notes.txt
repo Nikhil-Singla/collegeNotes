@@ -4,6 +4,16 @@ Goal: Teach students the critical knowledge to administer and defend computer ne
 Usage to learn: Computer security tools
 Secure services, applications and operating 
 - Explanation of syllabus
+
 Don't be attackers:
 Unauthorized access is illigal, even if its unintentional
 Anything goes on these hosts. Get the login from Lab room.
+Clone stuff using CloneZilla and store on Network using NAS, then use NFS (secure protocol) to restore stuff 
+on the local area network.
+Available clean images: Kali, Ubuntu, Windows ...
+
+Kali Linux: Aimed at digital forensics and penetration testing.
+Based on Debian GNU. Backtrack is based on Ubuntu and provides easy access to 
+comprehensive and large collection of tools.
+
+- Cybersecurity Ubdergraduate Certificate
