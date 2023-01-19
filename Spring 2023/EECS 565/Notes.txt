@@ -1,4 +1,57 @@
-Professor Fengjun:
+AProfessor Fengjun (Intro to Computer Security):
 Security is popular, with broader impacts and covers a broad spectrum of topics.
 It's required and is the basics of information security.
 - Syllabus
+
+Why do we study security?
+Computer key concepts:
+    - Vulnerabilities, threats, attacks, attack surface.
+Vulnerabilities and Risk Assessment
+    - Hardware, Software and data vulnerabilities
+The Adversaries
+    - Attack model, insiders, MOM
+The Controls: Security Design Principles
+    - Strategies to design protection/mitigation etc.
+
+Phreaking = Early hacking
+Signalling: Out of band or in band signalling to pass signal command, ie a special frequency to carry the signal
+    in command at 2600 Hz. Blue Box : Built by Steve Wozniak 
+(Changing signal against telecommunication system to change input phone number and send bill elsewhere)
+
+The Morris Worm: The first worm. Robert Morris's experiment in 1988 (measure the size of the Internet)
+A stack buffer overflow attack -> Brought down ~6k computers
+Why security:
+
+Smart Cars: Do they need security
+- False assumptions 
+(Code is too complex for troublemakers : More complex code is harder to secure.)
+(People don't wanna hack them : Disable alarms, unlock doors, tracking, because why not.) 
+- In Car computer systems are vulnerable
+(Tire Pressure Monitoring System TPMS signal sent wirelessly was easily eavesdropped, along with unique identifier)
+
+Attacks become Easy:
+1) Metasploit [Well known pentest tool]
+2) Kali Linux
+3) Hacking Scripts : "NSA" tools leaked by shadow brokers
+
+Defense side:
+Defensively, security is overlooked. Computer crime is underreported, not taken seriously and law is behind the times.
+Few lawmakers understand the tech while the law enforcement cannot keep up.
+
+Key concepts:
+NIST Computer Security Handbook:
+Computer securty is protection afforded to a . . . [Lecture slides]
+
+CIA Notion: Security
+- Confidentiality
+- Integrity
+- Availability
+
+Other Objectives?
+- Privacy (Confidentiality related to the identity)
+- Authenticity (Confirmation of identity)
+- Authorization (Control over the information)
+- Non-repudiation (Accountability)
+
+Confidentiality examples:
+[Get all the examples from slides]
