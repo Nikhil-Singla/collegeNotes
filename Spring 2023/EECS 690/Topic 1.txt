@@ -1,0 +1,127 @@
+Data Growth, Data centers and cloud computing.
+In the beginning, only mainframe and terminals; Connect to the main terminal.
+Next came PC's where Individual work on their own desktops
+Our development proceeded by connecting various PC's together.
+Finally culminated into The Web by Tim Berners-Lee at CERN in 1989 and publicized in 1991
+The Web Protocol was royalty free in 1993. Internet (development started in 1960)
+Web grew in size, PC's had to live in expensive data centers (million-server data center)
+
+Data centers:
+1) Need electric power
+2) Long build time
+3) Inflexible investment of capital
+4) Specialized skills, (security, failover, load balancing)
+5) Time away from core competencies
+6) Hard for all but the largest companies to own/run
+Solution: Outsource data center - Economy of scale, Webdevs focus on their advantage
+Low lead time and capital requirements, Computing becomes a commodity
+
+
+Data center consume too much electricity (90 bil kW/hr)
+Outsource to "clouds": Data center hardware and software to offer computing resources.
+
+Cloud computing represents both cloud storage and provided services
+"Cloud computing: Most tech diagrams depict IP using a cloud"
+It is a compilation of tech with a new infrastructure paradigm offering better scalibility,
+elasticity, business agility, faster startup tie, reduces costs and just-in-time availability of ress.
+-> Web-based apps, Databases running elsewhere. Consumer/Enterprise service
+
+On demand availability and delivery of computing services: Cloud computing
+Servers, Storage, DB's, Networking, Analytics, Software
+The cloud is a very large number of remote servers offered for rent.
+Why is it a big deal?
+
+- Cost : Avoid initial capital costs of hardware procurement.
+- Startup Time: Don't wait for hardware to start working.
+- Server choice: Change power of server as needed.
+- Distributed development: Remote working to share work
+- Security: Cloud providers security peope are "better", not too many vulnerabilities and equal to your security goals.
+- Remote servers: Release server on demand, can be scalable, elastic and resilient.
+
+Scalability: Cope with increasing number of users. Resilience: Software architecture to tolerate server failure.
+Elasticity: Scale up or down.
+
+Why not widespread: 
+Blackbox: (nothing is visible to client), Losing control
+Security: Cloud subject to traditional data/confidentiality issues.
+Performance, Uptime: Impact the bottom line 
+
+Basic terms/services: [Software as a Service / Platform as a Service / Infrastructure as a Service]
+1) On-Demand Self service
+2) Resource Pooling
+3) Broad Network Access
+4) Rapid Elasticity
+5) Measured services
+
+IaaS: Consumer is system admin. Capability provided to consumer is provision processing, storage, networking and
+other fundalmental computing resources. Run and deploy arbitrary software.
+PaaS: Consumer is dev/system admin. Consumer deploys applications onto the cloud infrastructure using programming 
+languages.
+SaaS: Consumer is end user, using applications running on cloud.
+
+Service model analogy: Pizza eating
+
+Data growth, data centers and cloud computing
+
+Various things as a service:
+Application; Data; Runtime; Middleware; Operating system; Virtualization; Networking; Storage; Servers
+Statistical databases (only stats, no personal information) that business can use also go on the cloud.
+Various things as a service: XaaS (Service model, X as a service)
+Photo editing: SaaS (Logistics management)
+Cloud management Monitoring: PaaS (Delivery of computing platform)
+DBaaS : Database as a service (Statistical Databases) can be provided with the same reasoning
+Another view (Infrastructure + OS in slides)
+Ex. 
+SaaS : GoogleDocs/Salesforce
+PaaS: Google Engine
+IaaS: AWS, Microsoft Azure
+
+One of the imp tech's used -> Virtualization technology to share spaces and hardware for economy of scale.
+Diagram - Hypervisor provides any Virtualization needed. (Picture in slides)
+Physical level = hardware
+Virtualization = Environment dependant on the needs/expectations of given client
+DBaaS:
+Grabbing some data from database, perhaps deployed on the cloud. Large organizations have 100's of DB's and models
+Relational heirarchy etc. Hiring Database Administrators becomes less investive by going to the service provider.
+
+DBaaS: A 3rd party hosts a relational DB as a service. Business and client doesn't need to worry about special
+access/charges to databases during New Year/Christmas etc
+The statistical database is to also create very large databases that need to be maintained by some database administrator.
+But one huge can be shared and specific parts can be interacted with only certain companies, such as cols/rows.
+Security though might compete with performance in this case as well.
+
+Big data: Is characterized by three frequently used V's. Volume (Size), Velocity (frequency of creation of data) 
+and Variety (pic, img, audio, structured/unstructured). (There can be upto 8 depending)
+Database might not have a lot of images (SQL). Structure also makes access and retrieval easier.
+Hower the variety no longer fits the structured parameter. (Facebook users and the variety of info they input)
+Alternative approaches (Unstructured data/ Non-SQL models) to store data and not waste space.
+
+Data sizes keep growing rapidly. 30 bil items stored on Facebook monthly. 
+15 of the 17 sectors of US economy have more data than Library of Congress.
+Stuff happens every minute too (300000 tweets, streaming 70000 hours, Apple download 30000 apps)
+
+The V's of Big data: [Graph in slides]
+Volume (size/amount of info): Zettabyte = 21 digits x_x
+Velocity (frequency of data generation/modification and processing)
+Variety (data type and source)
+Veracity (accuracy and credibility of data)
+Value (how much is it worth to an org) 
+
+Disciplines related to big data
+-Storage on various devices (Information theory)
+-Signalling/Formatting
+-Natural Language Processing
+-Computer visualization (Human-Computer interaction)
+-Data integration (Warehouses of data)
+-Data Analysis (Machine L)
+Almost all data goes through specific phases/stage
+Data generation/Collection: Enrollment, etc
+Data processing: Wrangling (cleaning/transforming), Compression (efficient for storage), Encryption (security) etc.
+Storage: Tapes, Floppy, CD's, HardDrives etc.
+Data management: Modeling, organizing and querying data. Providing keys for retrieval and other administrative functions.
+Data analysis: Write algorithms to deduce useful information from raw data.
+Data visualization: Creating graphical representation of data.
+Data Interpretation: Making better sense of data via analysis.
+It's a big deal because the amount of data generated and the scale of handling.
+
+END of First Topic: Evolution of computing devices, Big Data, Data life cycle
