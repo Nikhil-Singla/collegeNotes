@@ -64,3 +64,4 @@ IP address has 2 parts
 Network Connection Details: ifconfig [Interface Config for the Internet]
 Loopback interface is the internal interface to the own computer.
 Virtual network interface only at the local level [Home interface]
+[CloneZilla activity: Instructions on the course page "Clonezilla Slides"]
