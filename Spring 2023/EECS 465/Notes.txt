@@ -17,3 +17,50 @@ Based on Debian GNU. Backtrack is based on Ubuntu and provides easy access to
 comprehensive and large collection of tools.
 
 - Cybersecurity Ubdergraduate Certificate
+Network Terminology
+1) NIC: Network Interface Controller (aka Network Card/Network Interface)
+    Structure for wireless follows same principle.
+2) MAC: Media Access Control Address: Unique identifier assigned to network interface for communication on physical 
+    network segment. EG: 00:A0:C9:00:11:22  First three are the manufacturer (eg. Intel) and the last three are
+    the unique card ID. MAC address always stays the same.
+3) Internet Protocol Address (IP Address) : Numerical label assigned to each device participating in a computer network
+    and uses IP for communication. Two functions are host and network identifier, Location addressing.
+
+Versions of IP Address. 
+IPv4 (IP version 4: 32 bits for address)
+IPv6 (IP version of 128 bits for address)
+because 32 bits is not enough for all the possible addresses.
+They are usually binary numbers but stored in formats that are human readable.
+172 . 16 . 254 . 1
+    xxx . 00010000 . 11111110 . 00000001
+1 byte = 8 bits and each address is 32 bits or (4 * 8) -> 4 bytes
+IPv6 (in hexadecimal) 34 with 37 zeroes. So a lot more address.
+
+IP vs MAC (oversimplified)
+IP => Software Implementation support
+MAC => Hardware Implementation of the network stack
+MAC remains fixed and follows device, but IP address changes as network device moves between networks.
+
+4) Ports: Can refer to the physical or virtual connection points. Physical ports allow cables (routers, modems, etc)
+    Virtual ports are software applications to share hardware resources (16 bit numbers 0 - 65535)
+    (Applications using different ports to direct network packets to proper connection requirements. Eg, Discord 
+    network is different port from Chrome port which differs from Genshin port)
+
+Ports are divided into 3 ranges
+Well Known (0 - 1023); Registered (1024 - 49151); Dynamic/Private ports (49152 - 65535)
+Eg: 
+20 & 21: (FTP)
+22: Secure Shell (SSH)
+23: Telnet
+25: Simple Mail TP 
+80: HyperText TP - WWW
+443: HTTP Secure - HTTPS
+
+IPv4 Network Ranges:
+IP address has 2 parts
+    - Network portion
+    - Host number portion
+
+Network Connection Details: ifconfig [Interface Config for the Internet]
+Loopback interface is the internal interface to the own computer.
+Virtual network interface only at the local level [Home interface]
