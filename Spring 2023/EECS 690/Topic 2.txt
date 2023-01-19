@@ -1,1 +1,33 @@
 What is data science?
+Field of study and practice involving collection, storage and processing of data to derive 
+important insight into a problem.
+
+Who creates: Humans (survey, exam, papers), Machines (IoT, Weather data), Formats (Text, audio, VR, AR)
+Why is it imp: Lot of data and analysis requires training
+
+Three V's [See diagram in slides]
+Velocity: Speed data is accumulated
+Volume: Size and scope of data
+Variety: Array of data types
+
+Ex uses of DS:
+- Finance (Build prediction models) - Risk/fraud detection
+- Public health data (Metabolomic studies, DNA sequencing) - Personal wearable health trackers
+    Help in: Insight to patient centered medical quandaries (uncertainities)
+- Elementary education
+- Politics
+- Data driven solutions are more effective
+    How: Computerized software that constantly collects and measures data.
+    Teachers receive automated readout about reading time, vocabulary, knowledge, reading comprehension
+    Insight to students performance and learning approach.
+
+Relation to DS.
+Statistics: Sub-field of another
+Comp Sci: CS and DS are mutually supportive (Databases, data centers, structured and unstructured data)
+Computer Engineering: CPU, GPU, 3d printing
+Business analytics: Skills, tech and iterative exploration. Gain insight and be strategic. Make sense of performance
+
+Summary of Data science: Learn about the world from data using computation
+Exploration/Inference/Prediction
+
+[Data analysis activity (Canvas + Slides)]
