@@ -2,3 +2,50 @@ Computer Architecture:
 Attendance is offline, online with permission.
 Books by people who invented the processor.
 - Syllabus and schedule
+VHDL Slides [Book]
+Hardware Description Languages (HDL's) [Programm another device]
+Programming Languages (PL's) [Program a microprocessor]
+We program a device from inside that operates in a certain way to deliver certain functionality.
+PL's, most of these languages are called sequential languages. ie, execution follows a certain order.
+In Multi-core CPU, the instructions still happen in sequence.
+
+HDL's/ Digital Logic Circuit are concurrent by default. Limited by how fast circuity can switch.
+
+Modern HDL's.
+1) Encapsulate concepts: Entities, Objects, Concurrency, Delay and Timing.
+2) Core is that everything is parallel/concurrent
+3) Functional languages
+4) Support constructs so you need to first describe behaviour/structure of your construct.
+
+Two HDL's used:
+VHDL and Verilog. Syntax different, abilities similar. Verilog before VHDL. VHDL adopted by IEEE as a standard as it was more
+powerful by design. Verilog similar to C/C++: Industries [West], VHDL similar to Ada/Pascal: Military [East]
+VHDL is powerful but has more features while Verilog uses pre-defined types mostly until update.
+
+You cannot have infinite bits, so you need type to impose limitations onto the precision of Computer Hardware. To maintain 
+accuracy we need to have types as a limitations imposed on us by the underlying hardware.
+
+n1 bits * n2 bits = (n1 + n2) bits needed for answer
+Dynamic range: Range/ Values that a given variable can take.
+Gaps between intervals for ints are same. Floats increase exponentially.
+Float can thus get a lot more storage/bits.
+
+Strongly Typed: Types have to match.
+Weakly Typed: Types need to match that accurately.
+C IS WEAKLY TYPED AS IT STILL RUNS DESPITE MIGHT HAVING PROBLEMS.
+
+VHSIC (Very High Speed Intergrated Circuit) HDL
+Revised continously. transferred to IEEE by Dept of Defense; Made it VHDL. 
+
+Entity Declaration: I/O ports ("outline" of the circuit) [Think of function argument definition]
+Architecture body:
+    Collection of parts
+    Signal declarations
+    Concurrent Statement: Thought of as circuit part/contains timing information.
+
+Type is just the number of bits we use.
+Multiline wire = Slash['/'] followed by a number of bits. (AKA bus)
+Comments done using --
+VHDL IS CONCURRENT. SO ORDER DOESN'T MATTER as each statement describes a physical object.
+Execution of VHDL: Simulation [Design realised in virtual environment, BY A SINGLE CPU]
+Synthesis is very different [CHECK SLIDES]
