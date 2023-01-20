@@ -1,0 +1,62 @@
+Introduction to OS:
+-Syllabus
+Check out research website, Quizzes once a week.
+OS is everywhere: Computer, Smartphone, Cars, etc.
+What is OS:
+1) User - An easy to use virtual machine by hiding complex details (CPU, Memory, Where to store the data) and 
+    providing API's and services (read, write, filesystems).
+2) System - A resource manager (for the CPU, memory, storage etc), to make sure everyone gets fair share of
+    resources. Monitor/prevent errors and improper use.
+
+OS is a program that always runs (typically in kernel mode)
+Why is it needed?
+- Programmability: Don't need to know hardware details to do stuff.
+
+Memory Isolation:
+- Data stored can only be accessed by authorized.
+- Foundation of security.
+- Enforced by hardware
+-
+
+Meltdown Attack
+Attack exploits Intels  . . . 
+[Skipped]
+
+OS Design Issues: [Slides]
+
+Why do I need to study OS:
+User: Better tune the OS to improve performance.
+Programmer: Efficient programming by knowing how OS works.
+Hacker: Need to know system to break it.
+
+What is OS?
+Program that always runs (in kernel mode) as an intermediary between the user and the hardware for resource management.
+It can be thought of as an easy to use VM providing API's and services.
+
+Ada Lovelace: First programmer who wrote a paper/appendix on Babbage's analytical machine on early computing machines.
+
+History: Vaccum Tubes -> Transistors -> IC (integrated circuits) -> VLSI [Smaller, faster and more reliable]
+
+Evolution of OS: 
+1) Batch systems: Submit job on punch cards, collect batch of jobs, read and OS process one job at a time
+    Problem: CPU is underutilized to wait I/O operations. No interactivity
+2) Multiprogramming: Multiple running jobs and I/O and compute can overlap with the goal to maximize system throughput 
+    (OS - IBM OS/360)
+3) Timesharing: Multiple interactive users share machine; Accesses machine via terminal; 
+    Gives each user illusion of using entire machine. OS Goal: Optimize response time [UNIX OS]
+
+4) Parallel computing: Multiple CPU/cores to speed up performance. OS Goal: Fast synchronization and max util
+5) Distributed computing: Physically separate networked computers
+6) Virtualization: Multple OSes on a single machine
+    
+Challenges for future OS
+1) Heterogenous multicore processors 
+[SLIDES]
+
+Summary:
+    Learn about major OS components [Structure, interface, mechanisms, policies and algorithms]
+    Help understand foundation of computing systems.
+    Understand various engineering tradeoffs.
+
+** Recap **
+Evolution of OS
