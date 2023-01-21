@@ -4,3 +4,10 @@ Computer Architecture and OS:
     Architectural support for OS
 
 OS talks to hardware, need to know features and drives new hardware features as OS requires.
+
+CPU:
+    Brain of computer: Fetch instructions, decode, execute and store on memor/registers.
+
+Moore's Law
+    Transistors double every one or two years. 5.56 billion in an 19-core Intel Xeon Haswell-E5
+    114 billion in Apple M1 Ultra
