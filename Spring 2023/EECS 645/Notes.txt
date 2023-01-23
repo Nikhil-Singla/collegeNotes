@@ -49,3 +49,13 @@ Comments done using --
 VHDL IS CONCURRENT. SO ORDER DOESN'T MATTER as each statement describes a physical object.
 Execution of VHDL: Simulation [Design realised in virtual environment, BY A SINGLE CPU]
 Synthesis is very different [CHECK SLIDES]
+
+Testbenches:
+Debug code by designing testbenches that generate [Design under test/ Unit under test (DUT, UUT)] stimuli to test our code.
+Know your test vectors, what you should expect, and compare it to debug.
+Waveform diagram: The green diagram in Vivado that is a diagram over time.
+Tester code + DUT forms one unit.
+
+How to use Vivado tutorial. [Also slides]
+Dont copy design sources from original folder so that you don't accidentally delete your design incase source crashes.
+Run simulation for 1000ns by default in simulation settings by right clicking "Run Simulation"
