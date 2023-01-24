@@ -65,3 +65,17 @@ Network Connection Details: ifconfig [Interface Config for the Internet]
 Loopback interface is the internal interface to the own computer.
 Virtual network interface only at the local level [Home interface]
 [CloneZilla activity: Instructions on the course page "Clonezilla Slides"]
+
+Operating System:
+Kernel in the OS - Privileged mode of OS which user cannot normally access.
+Shell - Terminal/interface to kernel space.
+
+Administrator doesn't have as many privileges as the SYSTEM (Windows)/root (Linux).
+su - superuser; become root
+
+Local shells: View into machines utilities applications, etc. (Opening terminal/cmd prompt)
+Remote shells are view into remote system's utilities etc. SSH
+Clients connect to a server to get content, webservices, etc.
+Shell choice is upto you: Kind of like text editor
+Interacting with a shell: Execute commands by name.
+Example: Nmap (port scanner and fingerprinting tool) that executes commands by name.
