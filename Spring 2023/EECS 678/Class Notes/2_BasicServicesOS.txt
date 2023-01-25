@@ -1,0 +1,44 @@
+View of OS:
+- Start from Hardware.
+But we will learn about the Kernel Mode components
+Or the services offered under Operating System (Program Execution, I/O operations, File systems, Communications etc.)
+User mode is the third level -> GUI, Batch commands, command line (All part of the user interface UI) part of the system calls.
+
+OSS: (Operating System Service)
+User interface : Command Line Interface (CLI) vs Graphical User Interface (GUI)
+
+CLI:
+- Command Line intrepreter (shell): Sllows to type commands executed by OS. [We will write as part of the project]
+- User level software that take comand from user and execute after interpreting to the OS.
+- Many flavors: bash, csh, ksh etc. Not a part of the kernel.
+- Some are also external programs: find, grep; while, Some are built in: alias, echo, read
+
+Best use is : Precision as mouse cannot be as precise as keyboard can describe.
+Other than that, CLI is preferred because also easy to implement, and easier to 
+automate and faster as it uses less resources. It can also be accessed remotely.
+But the biggest drawback is that it is difficult to learn.
+
+GUI:
+- Uses mouse, keyboard and monitor.
+- Invented at Xerox PARC, adopted to Mac(intosh) and Windows etc. UI 
+
+They are easier to use, but use a lot more hardware resources.
+
+OSS Aspects - 
+1) File system service: Read/write/create/delete/search file and directories along with their information and manage permissions
+2) Communications: Share info between computers (on a network) or processes (same computer/inter-computer processes)
+3) Resource allocation: CPU cycles, main memory space, file space, I/O devices
+4) Accounting: Track users and usage
+5) Security: Login, admin privilege vs normal user vs guests
+6) Protection: Prevent memory coruption (b/w user, programs and kernel) while detecting and reporting any errors.
+
+System Calls:
+- Programming interface to use the services of the OS/Provide interface.
+Typically written in high-level language (C)
+Most programmers don't use sytem calls but instead use API's, but system programmers do.
+
+Most popular system call API's are:
+- win32 (windows)
+- POSIX API (POSIX based systems, also Linux, UNIX and Mac OS X)
+
+** Next lecture would include examples
