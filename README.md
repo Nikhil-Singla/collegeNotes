@@ -1,3 +1,3 @@
 # collegeNotes
-My notes for college classes that are needed for Finals Week Practice. </br>
+My notes for college classes that are needed Practice. </br>
 (Dictated personal notes)
