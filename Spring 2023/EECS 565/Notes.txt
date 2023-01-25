@@ -43,15 +43,37 @@ NIST Computer Security Handbook:
 Computer securty is protection afforded to a . . . [Lecture slides]
 
 CIA Notion: Security
-- Confidentiality
-- Integrity
-- Availability
+- Confidentiality: Only sender and intended receiver understand message content.
+- Integrity: Receiver can ensure message is not altered (in transit or after).
+- End point authentication: Sender and receiver can confirm the identity of each other.
 
 Other Objectives?
 - Privacy (Confidentiality related to the identity)
-- Authenticity (Confirmation of identity)
+- Availability (Able to access your data.)
 - Authorization (Control over the information)
 - Non-repudiation (Accountability)
 
 Confidentiality examples:
 [Get all the examples from slides]
+
+Cryptography:
+Conceals data against unauthorized access. 
+    Includes encipherment, digital signature and authentication exchange.
+    Intruder may try to block, intercept, modify or fabricate the mesage.
+Passive intruder: Eavesdrop.
+Active intruder: Modify the message.
+
+Plaintext = Original form of the message, Ciphertext = Encrpyted form of the message
+Conversion involves encryption and decryption
+
+Terminology: Crpytosystem
+    Its a system for encryption and decryption
+    Algorithm -> Plaintexts -> Ciphertexts -> Keys.
+    Cryptographic algorithm (cipher) : Takes key to convert plaintext, to ciphertext and then back.
+
+To understand Cryptography:
+    1) Crpytographic algorithm (How plaintext transformed to ciphertext)
+    2) Block ciphers and stream ciphers (How plaintext is processed)
+    3) How key is generated and used (1 key, 2 key, or no key)
+
+Ceaser cipher is a special case of shift cipher.
