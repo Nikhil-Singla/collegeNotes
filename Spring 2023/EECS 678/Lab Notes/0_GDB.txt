@@ -1,0 +1,11 @@
+Start: 
+make bugs           [USE MAKEFILE]
+gdb ./<objectname>  [RUN PROGRAM WITH GDB]
+r                   [START THE PROGRAM]
+bt                  [BACKTRACE ALL COMMANDS]
+f <INT NUMBER>      [STEP INTO A BACKTRACE FUNCTION]
+ptype <variable>    [GET THE DATATYPE OF VARIABLE]
+l (l for language)  [PRINTS THE BLOCK OF CODE CONTAINING THE F]
+p <variable_name>   [PRINTS ABOUT THE VARIABLE, INCLUDING DATATYPE AND STRUCTURES]
+q                   [QUIT]
+step                [STEP INSIDE THE CODE]
