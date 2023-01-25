@@ -1,0 +1,55 @@
+Definition of Datatype:
+    Set of values that an object can assume [Dynamic range] AND
+    Set of operations that can be performed on that object
+
+VHDL is strongly typed.
+Mismatch causes an error and needs typecasting/typeconversion.
+
+Integer:
+    Minimal range -(2^31 - 1) to +(2^31 - 1)
+    Subtypes include natural, positive.
+Boolean:
+    False, True. 
+Bit:
+    '1', or '0', not too powerful. 1 bit vector translates into a group of wire called a bus
+
+STD_logic_package adds more power to bit with the single wire modelling. It has more values (9 types) and the package needs 
+    to be invoked to use. [.all uses everything in the package invocation]
+The package helps in simulating scenario of ports and see if the code can work in real life applications.
+    0 means ground and 1 means power supply in a digital logic circuit. 
+If 1 is connected to 0, it results in a short circuit/explosion and is represented by 'X' in the package, etc.
+
+How to infer arithmetic operators: numeric_std package (Defines types flexible in bits)
+In standard VHDL, sum <= a + b;
+** Integer is 32 bits (precision)
+What's wrong with integer? : Overflow, or Underuse of Memory Space.
+There's no type to use less number of bits either.
+
+In numeric_std:
+There are unsigned and signed data types. An array is interpreted as an unsigned or signed binary number.
+15 down to 0 implies 16 bits. Package also defines addition "+" for these datatypes.
+Package needs to be invoked too though.
+
+Conversion can be done using typecasting.
+data type of a          to data type
+std_logic_vector        signed              => signed(a)
+.                       unsigned            => unsigned(a)
+unsigned, signed        std_logic_vector    => std_logic_vector(a)
+
+unsigned, signed        integer             => to_integer(a)
+natural                 unsigned            => to_unsigned(a, size)
+integer                 signed              => to_signed(a, size)
+
+Non-IEEE packages
+Packages by Synopsys. Tool vendors frequently store them in ieee library.
+
+std_logic_unsigned / std_logic_signed [Overloads; convenient, but ruins the motivation of strongly typed language], numeric_std is preferred. 
+
+[Quick reference card: Posted on canvas] : Use sections 2.2 and 2.4 for Homework
+
+Summary of VHDL using synthesizable concurrent VHDL statements: [While everything is simulatable, summary statements are also synthesizable]
+1) Direct Assignment -> Dataflow Style
+    Left hand side, assign to it something from right hand side using the '<=' symbol.
+    Right hand side could also be regular boolean expressions.
+    "mux" is Multiplexer: It is a selecter that selects 1 out of 4 depending on the select signal. 2^select size signal
+Everything in VHD translates to physical object
