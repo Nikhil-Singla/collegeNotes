@@ -1,0 +1,35 @@
+=> Execute commands by name in terminal/shell
+Most commands need flags to execute completely or they will provide help using flags.
+    [--help or -h for questions about running the tools]
+
+cd              : "change directory"            (change working path)
+ls              : "list"                        (lists files in directories)
+pwd             : "print working directory"     (tells us the working path of the terminal)
+mv              : move
+cp              : copy files and directories
+mkdir           : make directory
+rm/rmdir        : remove directory
+cat             : concatenate (prints file to terminal)
+grep            : (search in files)
+nano, vi or vim : command line text editors
+ifconfig        : interface configuration (lists networks, interface info and IP addresses)
+ping            : check connectivity status (ping other websites/hosts etc)
+wget, curl      : retrieves files/webpages over a network
+ssh, scp        : secure shell and secure copy
+su              : get super user access. (Must use the prefix sudo)
+
+passwd          : password triggers password change for current user
+** Image machines and add password while working in lab to save your content
+
+(missed commands in slides)
+ctrl + c        : Kill command
+top             : displays running processes
+
+Combining commands/Redirections using |, < or >
+Form of redirection that combines two or more commands by directing the output of one command to another command.
+Direction of arrow determines flow of code/output
+
+Installing applications/packages performed through a package manager that automate process and dependencies installation.
+Examples: apt (Debian, Ubuntu, Kali), yum (Fedora), rpm (Red Hat), pacman (Manjaro)
+
+<Inclass Activity>

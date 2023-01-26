@@ -1,0 +1,47 @@
+LAMP: Open source web dev platform allowing user to write applications
+Linux-Apache-MySQL-PHP
+Free and lightweight alternative to "WISA", Windows-IIS-SQL Server-ASP (now ASP.net)
+Lamp applications:
+    - Wiki
+    - C M S (content management systems)
+    - Management software
+Substitution:
+Flexbility to substitute most of the components.
+    MySQL   : SQLite/PostgreSQL
+    PHP     : Python, Perl, Ruby etc.
+    Apache  : Nginx, Cherokee
+
+Linux       : Open-source OS based on Linux Kernel.
+Made of: Linux Kernel + System Tools + Application Programs
+
+Distribution/Distro 
+-> Red hat/ RPM-based
+-> Debian/ DEB-based
+
+Apache      : Free and open source web server, host website and parse php files.
+
+MySQL       : Platform-interconnectedness, scalable, free and open source DBMS (Database Management System)
+MariaDB     : Branch of MySQL available for Kali Linux
+PhpMyAdmin  : Free web based admin tool for either of the DBMS
+
+PHP         : Easy to learn, popular and open source website language/server-side script.
+Makes HTML code and sends it to the client due to server side scripting.
+
+First LAMP/PHP file created is info.php
+Single Function creating large html page for details
+
+<In-Class activity demonstrating installation of LAMP>
+
+- sudo su
+- apt update -> apt upgrade
+- apt install apache2
+- systemctl start apache2
+.           restart apache2
+.           enable apache2 (start on bootup)
+.           stop apache2
+
+- apt install mariadb-server
+- mysql
+    > alter user 'root'@'localhost' identified by '<INSERT PASSWORD>';
+- mysql -u root -p
+
