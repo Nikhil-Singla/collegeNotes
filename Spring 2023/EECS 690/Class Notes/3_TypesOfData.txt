@@ -1,0 +1,18 @@
+
+
+Data pre-processing: Hands-on
+    Data cleaning : Wrangling, Handle missing data and Smooth noisy data.
+    Data change: Integration, transformation, reduction and discretization.
+
+Data Wrangling: No specific method, just depends on nature of the data to make it more analysis friendly.
+>              Makes the data more convenient and desirable.
+Process of manually converting/mapping data from "raw" to another format.
+
+Smooth noisy data: When data is corrupted, no single technique to take care of missing data. Some steps include,
+>              remove outliers, resolve inconsistencies, etc.
+
+Data integration: Assuming we have another dataset to integrate, smooth over the values and adapt them to our original data.
+
+Data transformation: Involves smoothing, removing noise, summarization, generalization and normalization.
+
+Data reduction: Producing reduced representation of tthe dataset to obtain similar analytical results.
