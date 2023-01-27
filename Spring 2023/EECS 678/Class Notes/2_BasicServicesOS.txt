@@ -42,3 +42,42 @@ Most popular system call API's are:
 - POSIX API (POSIX based systems, also Linux, UNIX and Mac OS X)
 
 ** Next lecture would include examples
+
+Example of system call: Copy contents of one file to another file.
+System Calls: Open, read and write.
+Non Syscall : printf
+
+Man 2 read -> Man is manual, 2 refers to the page about system calls, and we then read.
+The way it works: API -> System Call -> OS does work
+Switching happen when special instruction betwen the system call interface and user application. The thing changes from
+user mode to kernel mode.
+
+Standard C Library:
+C program invoking printf() library call which calls write() system call.
+Asterik tool -> Show you about system call
+
+Types of System Call:
+    Process control
+    File Management
+    etc (SLIDES)
+
+Operating System Structure:
+- Simple Structure : MS - DOS [Microsoft DOS] (OLD OPERATING SYSTEM)
+- Monolithic Kernel: UNIX
+- Microkernel      : Mach
+
+MS DOS:
+Most functionality, least space. Minimal functionality and divided into modules.
+
+Unix: Monolithic Kernel
+Implements CPU scheduling, memory management, filesystems and other OS modules all in a big single chunk.
+Low overhead, and easy data sharing, but the drier is too big and one bug can crash everything.
+
+Dynamically Loadable Kernel modules
+- Dynamically load/unload new kernel code. (Most new OS support this)
+- No need to have every driver in kernel, and easy to extend it, but still, bugs can crash everything.
+
+MicroKernel:
+Moves from kernel to user space and communicate via mesage passing.
+Benefit is that its secure against systemwide crashes as the parts are independent and more reliable, but the speed
+ loss due to message passing is a big drawback causing huge performance overhead.
