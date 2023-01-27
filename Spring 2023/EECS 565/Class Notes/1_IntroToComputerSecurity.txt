@@ -77,3 +77,73 @@ To understand Cryptography:
     3) How key is generated and used (1 key, 2 key, or no key)
 
 Ceaser cipher is a special case of shift cipher.
+
+Classic ciphers:
+    - One time pad (OTP)
+    - Transition ciphers
+
+Password cracker task   :   You are an attacker [Project activity in Canvas]
+Brute force attack successful? - Probably yes
+Why the Vigenere cipher can be broken: Use alphabets to hide frequency patterns but still a shift cipher
+To use vigenere cipher, we need a (very) long key!
+Ideally Long key : Random, continuous and non-repeated.
+Generate a random bit of sequence and then convert it to ASCII and then bitstring to get key.
+
+Vernam cipher : Plaintext and keystream are both letters (A = 0, B = 1)
+Key is same length as plaintext
+Ciphertext = Plaintext + key (mod 26)
+Machine : Uses three tapes for plain, key and cipher text
+Known as a One-Time Pad (OTP)
+
+Practical way to do One-Time Pad:
+    Each bit in keystream is used to encrypt plaintext in bitstream
+    Do bit-level trick - XOR
+    Provides uniform output, Randomly generated
+    Bitwise-XOR is a mod 2 operation.
+
+Feature: Same key is used for both encryption and decryption
+Works: XOR on itself is 0 and on plaintext p double XOR gives p
+Encryption : plaintext XOR keystream
+
+Advantages of OTP:
+    Fast/Quick and theoretically secure if the key is secure.
+    Given ciphertext, then plaintext could be anything.
+
+Perfect secrecy : OTP is impossible unless
+    Key is truly random and as long as plaintext
+    This means all plaintexts are equally likely
+Problems:
+    Key must be as long as the plaintext
+    Insecure if the key is reused
+    No guarantee of integrity
+
+Cipher design technique:
+    Substitution  : exchange bits for another set
+    Transposition : Rearrange order of ciphertext
+
+Transposition Cipher: Rearrange plaintext to get ciphertext
+Most transposition use a fixed period d
+<Example in slides/lecture>
+
+Transposition can be cracked by frequency analysis of digramsn and trigrams (common letter pairs or triples).
+
+>Substitution is for Confusion. 
+Transposition is for Diffusion.
+
+Confusion: Make the relationship between plain and cipher as complex as possible/ Unpredictibility
+Change affects cipher unpredictibly
+
+Diffusion: Dissipate the statistical structure of the plaintext in long rage statistics of cipher.
+Change affects cipher in many different parts
+
+Claude Shannon: "Father of information theory"
+Cipher achieves perfect secrecy if and only if there are as many possible keys as possible plaintexts, and every key is 
+equally likely.
+Combination of Approaches is the strongest.
+
+Cryptosystem should be infeasible to:
+– enumerate all possible keys
+– find the key from cipher and plaintext by enumerating possible keys 
+– get plain from cipher without key
+– distinguish cipher from true random values
+
