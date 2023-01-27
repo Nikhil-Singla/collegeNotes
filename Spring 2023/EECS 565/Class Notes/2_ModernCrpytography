@@ -5,3 +5,5 @@ Symetric and Asymetric Encryptions
 Usage depends on processing of input.
 Vigenere is not a block cipher because Vigenere processes the block as a whole, not one by one.
 DES: Data Encryption Standard, minor variation of the Feistel structure.
+
+<Finish on slides>

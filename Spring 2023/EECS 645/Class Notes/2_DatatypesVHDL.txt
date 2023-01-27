@@ -53,3 +53,44 @@ Summary of VHDL using synthesizable concurrent VHDL statements: [While everythin
     Right hand side could also be regular boolean expressions.
     "mux" is Multiplexer: It is a selecter that selects 1 out of 4 depending on the select signal. 2^select size signal
 Everything in VHD translates to physical object
+DataFlow style is direct assignment as its flowing being assigned to an expression.
+
+Numeric std package:
+Defines integer as array of elements of STD_logic.
+
+Type conversion between data types:
+- If they're closely related : Type casting
+Ex: unsigned (bitstring) and std_logic
+
+- If they're not linked, we have specific conversion function 
+Ex: unsigned and integer (decimal data structure)
+
+Negative bits more than required (-3 in 5 bits) is signed extension by adding (1's at the beginning of a negative number after
+minimum bits representation of -3).
+
+2) PROCESS Statement -> Behavioral Style
+a) -> IF-THEN-ELSE statement
+While process as a whole is concurrent, sometimes inside of it might be sequential due to if-else flow.
+* Between begin and main heading keyword, we can declare internal signals/wires.
+VHDL is case insensitive but conventionally, keywords are all caps.
+    IF statements convert to logic gates from logical functions.
+    Sensitivity List: Process is sensitive to any event that happens to any of these signals.
+    Usually syntax is similar to the parameters of a function in any other programming language.
+    Event: Any change in the value of the signals/variable.
+    The sensitivity list is determined by the inputs of the function/ anything that you read in the process.
+    Short-circuit in IF statement: Whenever an IF condition is evaluated true, the rest of the statements are not.
+    Shorter-inertial delay vs longer-intertial detail depends on the IF statement order; First IF statement has higher prio
+
+b) -> CASE statement
+Similar functioning to switch statement, but no notion of priority unlike IF-ELSE-THEN statement.
+
+c) Resettable Flip-Flop (D-FF) Interface
+    Main use of Flip-Flop is memory as it stores its input.
+    !! Multi-bit memory element AKA register -> Group of Flip-Flops put side by side but sharing same clock and reset.
+        8 bit register = 8 flip-flops = 8 bits = 1 byte.
+    Multiple registers together => Memory
+    Synchronous reset -> RESET ACTION IS SYNCHRONIZED TO THE CLOCK.
+    Otherwise, Asynch reset -> RESET ACTION IS NOT SYNCHRONIZED TO THE CLOCK [Check slides for architecture]
+    [SLIDES] Look at d, it won't matter in PROCESS senstivity list, because firing the process depends only on clk/rst depending        
+>            on the structure being asynch or synch.
+
