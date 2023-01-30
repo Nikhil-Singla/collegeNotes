@@ -94,3 +94,16 @@ c) Resettable Flip-Flop (D-FF) Interface
     [SLIDES] Look at d, it won't matter in PROCESS senstivity list, because firing the process depends only on clk/rst depending        
 >            on the structure being asynch or synch.
 
+Behavioral is quicker to design and implement than structure, but structural is more involved and less prone to error as the
+    programmer can design the structure.
+
+3) COMPONENT Instantiation -> Structural Style
+In OOP, you create smallest individual objects and then instantiate an object from it.
+Similarly, COMPONENT instantiation is also creating a chart for any unit and then implementing it component wise.
+First design its components, and then design (my_gate) the final thing.
+=> is called "Map to" or connect to.
+    That is "a => S1" means map the a to S1 of the bigger architecture after the not gate is run <Lecture slides>. 
+
+4) GENERATE statement -> Structural Style
+Use FOR generate loop to generate the COMPONENT that is very large in number.
+You can use nested generate statements to create even more strucutral outputs/components.
