@@ -81,3 +81,10 @@ MicroKernel:
 Moves from kernel to user space and communicate via mesage passing.
 Benefit is that its secure against systemwide crashes as the parts are independent and more reliable, but the speed
  loss due to message passing is a big drawback causing huge performance overhead.
+
+Hybrid Structure:
+Not pure model, combines multiple approaches
+Example: 
+Linux and Solaris kernels in kernel address space, so monolithic, plus
+    modular for dynamic loading of functionality
+Windows mostly monolithic, plus microkernel for different subsystem personalities

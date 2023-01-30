@@ -1,0 +1,49 @@
+OS Service:
+    Resource allocation, filesystem, IO operations etc.
+OS Interface
+    System call is how you access OS functionality.
+
+Process Concept, Context switching
+
+Process:
+OS abstraction that represents a running application
+It has three main components:
+    1) Address space:
+    Process's view of memory that includes program code, global variables, dynamic memory and stack.
+    2) Processors state:
+    Program counter (PC), stack pointer, and other CPU registers.
+    3) OS resources
+    Various OS resources that the process uses like open files, sockets, accounting information etc.
+
+Process Address Space:
+Text    : Program Code
+Data    : Global Variables
+Heap    : Dynamically Allocated memory (malloc())
+Stack   : Temporary Variables (grow at each function call)
+
+Process Address Space:
+Each has own private address space => 4GB or 2^32 bytes of continuous memory in 32 bit machine
+Each has same range (eg. 0x0 ~ 0xffffffff)
+How is it possible if less than 4GB of DRAM:
+    Virtual Memory (OS provides this ILLUSIOn)
+
+Process state:
+running : instruction executed
+waiting : process waiting for event to occur
+ready   : process waiting to be assigned to processor
+
+Number of running is equal to number of cores
+State diagram =>
+new (admitted) -> ready (interrupt/scheduler dispatch) -> running (exit) -> terminated
+or                                                       running (IO/event wait) -> waiting (IO/event completion) -> running
+
+Process Control Block (PCB)
+- Information associated with each process
+    - Process ID
+    - Process state
+    - CPU 
+        registers
+        scehduling information
+    - Memory management info
+    – Accounting information
+    – OS resources
