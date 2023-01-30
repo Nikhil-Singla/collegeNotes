@@ -1,0 +1,6 @@
+Fundamentals are very important! Bigger picture focus.
+Hype-Cycle for emerging tech usually starts from R&D till Mass media picks it up and hypes it at max.
+Then the expectations fall, we get consolidation and failures till less than 5% of the audience fully adopt and we
+    reach a neutral plateau.
+
+    
