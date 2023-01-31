@@ -3,3 +3,4 @@ Introduction to R
 R packages: Install R studio if needed, otherwise Anaconda is also good.
 You can use Jupyter Notebook / R Studio
 [In Class activity]
+

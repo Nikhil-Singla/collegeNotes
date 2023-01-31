@@ -16,3 +16,7 @@ Data integration: Assuming we have another dataset to integrate, smooth over the
 Data transformation: Involves smoothing, removing noise, summarization, generalization and normalization.
 
 Data reduction: Producing reduced representation of tthe dataset to obtain similar analytical results.
+
+<One Missed Class>
+
+Outliers: Look for data points that make no sense. More than 1.0 percentage, 
