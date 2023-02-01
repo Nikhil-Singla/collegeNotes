@@ -2,3 +2,43 @@ Fundamentals are very important! Bigger picture focus.
 Hype-Cycle for emerging tech usually starts from R&D till Mass media picks it up and hypes it at max.
 Then the expectations fall, we get consolidation and failures till less than 5% of the audience fully adopt and we
     reach a neutral plateau.
+
+First electronic programmable computers => World War 2, 1943 UK and 1945 US
+US: Turing complete: General purpose machine. Ex - ENIAC Computer
+UK: Turing Incomplete: Machine can only do one task. Ex - Colossus computer = Only break code.
+
+ENIAC (Electronic Numerical Integrator and Calculator)
+- 20, 10 digit registers (2 feet long each)
+- Funded by US millitary, publicly disclosed in 1946 at University of Pennsylvania
+- 18k vaccum tube 
+
+The first transistor: 1947
+First Integrated Circuit: 1958 with aim of integration of circuits
+IC's were not flexible/programmable, thus we got ->
+Microprocessor: 1971 where 3 projects gave 3 results
+-> Intel -> Texas Instruments -> 
+=> Performance improvement, feature size and clock speed with improvement in architecture to enable lightweight computers and 
+    productivity based programming languages. RISC architecture's rose
+
+RISC : Reduced Instruction Set Computer, CISC: Complex Instruction Set Computer
+Numbers after the RISC are just different iterations.
+Earlier, performance = Number of transistors, but now its Clock Speed.
+
+Moores Law has 3 iterations:
+Technologist (Spatial): Double transistors
+Microarchitect (Temporal): Double Clock frequency per core
+Multicore (Spatio-Temporal): Double cores per chip, Double parallelism per workload
+
+It stopped now due to heat density : Amount of heat generated per unit area -> Led to Power War, Dennard's Scale
+High heat density is due to transistor having so much current passed through it, it generates as much heat.
+Characteristic Curve of the transistor: Slows down the switch of 1 to 0 or reverse in a transistor due to current.
+Which consumes more and more power.
+Solution was to have multicore chips (Parallelism)
+
+Classes of computers
+Personal Mobile Device (PMD) -> Smart Phone, Tablet computer
+Desktop Computing -> Price-performance
+Servers -> Availability, scalability, throughput
+Clusters/Warehouse Scale Computers -> Used for SaaS, availability and price-performance.
+    - Supercomputers (sub class), floating point performance
+Embedded Computers: Components of system emphasis on price and real-time.

@@ -7,3 +7,8 @@ Vigenere is not a block cipher because Vigenere processes the block as a whole, 
 DES: Data Encryption Standard, minor variation of the Feistel structure.
 
 <Finish on slides>
+
+DES Cipher: 
+Block cipher of 64 bit-block sides
+Only 56-bit keys as every 8th bit is for parity.
+16 rounds => Conducts for 16 times/block
