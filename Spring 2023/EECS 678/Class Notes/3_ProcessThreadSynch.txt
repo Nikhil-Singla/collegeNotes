@@ -47,3 +47,22 @@ Process Control Block (PCB)
     - Memory management info
     – Accounting information
     – OS resources
+
+Process Scheduling:
+    - Decides which process to run next (only ready processes)
+    - OS has multiple scheduling queues; Ready queue (ready to be executed), and Device queue (processes waiting for I/O)
+
+Context Switching:
+    Suspend current process and resume next one from last suspended state.
+
+You dont save memory due to virtual memory that means there is only the need to save register state.
+Cache data of previous process is not useful for new process
+Overhead: Save and restore CPU states (warm-up instruction and data cache)
+1.8 Micro seconds on 2.8 GhZ translates to 5040 (1.8*2.8*1000) cycles as its 1 nanosecond per cycle.
+
+Process Creation: Made using system calls (fork()/ exec())
+Process Termination:
+    Normal termination : exit() system call which exits by itself and returns status data, with deallocation of rss.
+    Forced termination : kill() system call
+    Zombie process     : if no parent, did not invoke wait().
+    Orphan process     : parent was terminated first.

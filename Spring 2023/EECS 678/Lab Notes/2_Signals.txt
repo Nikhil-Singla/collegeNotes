@@ -1,0 +1,11 @@
+Ctrl+C -> STOP/KILL
+Ctrl+Z -> STOP (Stops the process but it still holds the memory to restart by using fg/bg)
+    Assigns a number to continue the program
+fg <number_of_program>  : Foreground (Run a process in the foreground)
+bg <number_of_program>  : Background (Run a process in the background)
+kill -l                 : Lists all the possible processes to kill
+kill <process_ID>       : Kills a process in the background
+ps                      : Lists all running process with PID
+ef                      : All process with explanations and user ID's
+kill -9 <process_number>: Kill using the SIGKILL (No handler function possible unlike other kills)
+man <command>           : Get a manual for a specified command.
