@@ -16,7 +16,6 @@ Data centers:
 Solution: Outsource data center - Economy of scale, Webdevs focus on their advantage
 Low lead time and capital requirements, Computing becomes a commodity
 
-
 Data center consume too much electricity (90 bil kW/hr)
 Outsource to "clouds": Data center hardware and software to offer computing resources.
 

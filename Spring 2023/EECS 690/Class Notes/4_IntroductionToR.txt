@@ -4,3 +4,19 @@ R packages: Install R studio if needed, otherwise Anaconda is also good.
 You can use Jupyter Notebook / R Studio
 [In Class activity]
 
+Hands-On Purposes:
+Types of Data Analysis:
+- Descriptive
+- Exploratory
+- Predictive
+- Inferential       : Looks for patterns, trends, or relationships in a single data set and also asks for quantification of how applicable these findings are to the wider population
+- Causal            : Relationship between factors and if changing one factor will lead to a change in another factor
+- Mechanistic       : question that asks about the underlying mechanism of the observed patterns, trends,
+
+Analysis Tool
+-> Summarization    : Computing and reporting aggregated values pertaining to a data set
+-> Visualization    : Plotting data graphically
+-> Regression       : Predicting a quantitative value for a new observation
+-> Clustering       : Finding previously unknown/unlabeled subgroups in a data set
+-> Estimation       : Taking measurements for a small number of items from a large group and making a good guess for 
+-                       the average or proportion for the large group
