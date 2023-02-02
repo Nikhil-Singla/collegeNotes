@@ -1,0 +1,68 @@
+Reconnaissance: Information gathering
+2 step process: 
+Open source intelligence gathering, (publicly available information)
+    In class activity tool : TheHarvester (Gathering a lot of the domains etc)
+    Is it okay to collect?
+    Technically yes, but depends on how many times you are going to collect
+Result: Quite a few domain/host names that maps to IP addresses.
+Scan hosts connected to a network to determine:
+    - Live hosts
+    - Network topology, etc
+Use NMAP next, a port scanner that looks for open ports, ping sweeper and fingerprinting tool for the OS.
+A port open means there's an application/process running which might be a potential entrypoint.
+
+Nmap Scans : 
+    Ping Sweeps - nmap -sP <target_ip>
+    TCP connect - nmap [-sT] <target_ip>
+        TCP Three-way Handshake - SYN, SYN-ACK, ACK are the packets exchanged to establish a confirmed line 
+    UDP - Send a UDP packet nmap -sU <target_ip> [Good for streaming/sending log files]
+
+TCP:
+    -> If threeway-Handshake is NOT completed: Instead of final ACK, send RST or NOTHING
+    -> Slightly stealthy
+
+NMAP exploits this 
+- using TCP FIN mode by sending TCP FIN to a target port, violation of TCP specification.
+    If no response, port may be open, more stealthy, will have diff effect on Microsoft Systems not following RFC
+- using Xmas Tree TCP segment with FIN, URG and PSH code bit set. RST -> Port closed, port open otherwise
+- using TCP ACK mode: RST is returned -> packet made through filter.
+- etc <slides>
+
+No need to go through all ports, just on ranges of well known ports.
+    thus, NMAP scan also has specific port ranges, setting source ports to prevent packet blocks, 
+    and using decoys (packets and source address decoy)
+
+UDP :
+    No three-way, no sequence
+
+<LAB NMAP activity>
+-> -T4  : Timing template -> Adjust overall Nmap speed from very slow (T0, to extremely aggressive -T5)
+->  v   : increase verbosity
+-> -A   : enable OS detection
+
+For legallity: You need to own both host and the infrastructure. Eg. Routers and switches from source of scan to host
+AFter network scan: Vulnerability Scanning is next.
+Attackers can start searching automatically using automated tools that scans hosts for known vulnerabilities.
+Used with other reconnaissance to plan attacks using credentialted vulnerability scanner.
+
+Vulnerability scanner is backed up by vulnerability database.
+Banner is one way to fingerprint, others are also possible using probing packets.
+
+VAS : Vulnerability Assessment Tool
+Nessus : proprietary, Free for Home use, Run on Windows, Linux, etc.
+OpenVAS: Open-source fork when Nessus became proprietary, less checks/functionality.
+Two major components of Nessus:
+    Server : Vulnerability Database + Scanning engine
+    Client : Create policy, runs cans and view results
+
+Nessus Plugins:
+- Plugin => program that checks for given known flaw as every audit is coded as plugin.
+- Customizable using NASL (Nessus Attack Scripting Language)
+- NASL is used in OpenVAS (100000+ network vul. tests) and Nessus (181000+ plugins) 
+
+Major plugin families: Backdoors, Brute force attacks, CISCO, Databases, Debian Local Security Checks, Default Unix Accounts,
+    Denial of Service, Fedora Local Security Checks, Firewalls, Web Servers, Windows.
+
+DO NOT USE NESSUS ON THE WEB as they are very very aggressive.
+
+Homework 1!
