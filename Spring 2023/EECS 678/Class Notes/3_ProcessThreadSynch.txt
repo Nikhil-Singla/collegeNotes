@@ -57,7 +57,7 @@ Context Switching:
 
 You dont save memory due to virtual memory that means there is only the need to save register state.
 Cache data of previous process is not useful for new process
-Overhead: Save and restore CPU states (warm-up instruction and data cache)
+Overhead: Save and restore CPU states (also, warm-up instruction and data cache)
 1.8 Micro seconds on 2.8 GhZ translates to 5040 (1.8*2.8*1000) cycles as its 1 nanosecond per cycle.
 
 Process Creation: Made using system calls (fork()/ exec())

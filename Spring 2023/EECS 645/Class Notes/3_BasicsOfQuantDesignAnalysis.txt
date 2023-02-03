@@ -42,3 +42,33 @@ Servers -> Availability, scalability, throughput
 Clusters/Warehouse Scale Computers -> Used for SaaS, availability and price-performance.
     - Supercomputers (sub class), floating point performance
 Embedded Computers: Components of system emphasis on price and real-time.
+
+Flynn's Taxonomy:
+Single Instruction stream, Single data stream   -> SISD [aka ILP Instruction Level Parallelism] (Uniprocessors)
+Single Instruction stream, Multiple data stream -> SIMD [aka DLP Data Level Parallelism] (GPU's, Multimedia, Vector)
+    Greyscale => 0 - 255, Black = 0, White = 255. Each pixel has 1 byte of color, so total pixels * bytes = Storage required.
+    RGB => Frequency Bands, Color bands [Multiple colors = Multi spectral Image] Different bands in one Voxel.
+    You need to allocate 3 times the memory for RGB than Greyscale. To process at same speed as greyscale, you use 3 PU's
+        or processing units to process it at the same speed, hence SIMD.
+    3 times speedup in SIMD vs SISD for RBG due to degree parallelism, which can process individual bands.
+Multiple Instruction stream, Single data stream -> MISD (No commercial implementation, fault tolerance, maybe decryption
+.                                                           by running multiple ciphers on one data stream/pool)
+Multiple Instruction stream, Multiple data stream -> MIMD (Hyperthreading/VM)
+    Tightly coupled MIMD -> TLP [Thread-level parallelism ]
+    Loosely coupled MIMD -> RLP [Request-level parallelism]
+    
+Classes of Parallelism in application 
+    Data Level Parallelism [DLP]
+    Task Level Parallelism [TLP]
+
+Computer architecture exploits DLP and TLP as
+- Uniprocessor (single-core) architectures [Deep Parallelism]: ILP => DLP [Speculative Execution]
+- Multiprocessor (multi-core) architecture [Wide Parallelism]:
+    Vector architecture/GPU's   : DLP
+    Thread Level Parallelism    : DLP/TLP
+    Request Level Parallelism   : TLP
+
+Defining Computer Architecture:
+    -> Old is Instruction Set Architecture [ISA], i.e. decisions regarding registers, memory addressing, control flow instructions, etc.
+    -> "Real" architecture is maximize performance with constraints or performance requirements of target.
+    >       Includes ISA, hardware, organization.
