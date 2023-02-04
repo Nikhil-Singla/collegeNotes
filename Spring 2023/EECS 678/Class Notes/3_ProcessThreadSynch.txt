@@ -66,3 +66,16 @@ Process Termination:
     Forced termination : kill() system call
     Zombie process     : if no parent, did not invoke wait().
     Orphan process     : parent was terminated first.
+
+Chrome Browser: Multi process architecture, each tab is separate process.
+Why?: 
+- Individualizes the tabs, so if one crashes, others are fine, resiliency
+
+Models of IPC
+Message Passing Paradim: Exchange messages, tpyically involve data copies.
+- Share region between coperating processes by reading or writing to shared memory region.
+- Fast communication but cannot synchronize memory usage between the processes that share memory.
+
+Shared Memory Paradigm: Eliminate the kernel as a need for sharing memory as they have the exact same physical memory.
+- Exchange memory by copying data to/from buffer and sending it/receiving it
+- But, while this maintains synchronization, it slows down the speed.
