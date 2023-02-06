@@ -72,3 +72,21 @@ Defining Computer Architecture:
     -> Old is Instruction Set Architecture [ISA], i.e. decisions regarding registers, memory addressing, control flow instructions, etc.
     -> "Real" architecture is maximize performance with constraints or performance requirements of target.
     >       Includes ISA, hardware, organization.
+
+Trends in Cost:
+Cost driven down by learning curve (Yield)
+
+Manufacturing IC's
+Ingot --Slicer--> Wafer --20-40 processing steps--> Patterened Wafer --Dicer--> Tested Dies
+Yield : Proportion of working dies per wafer = Working Dies/Dies per wafer
+Approx 0.1 inch thick wafers from 24 inch Ingots ~ 240 wafers
+IC cost increase if we have a lesser yield per wafer
+
+Bose-Einstein formula (emperical model) to calculate Yield in advance.
+
+Cerebras -> Computer system company, making Wafer-Scale Engine (WSE)
+-> Largest chip built, 400000 AI-optimizied cores [46225mm^2, 2.1 Trillion Transistors]
+-> 56 times the size of the Largest GPU [815mm^2 and 21.1 Billion Transistors]
+
+WSE-2 : 2021
+-> Largest chip built, improved, 850000 AI-optimizied cores [46225mm^2, 2.6 Trillion Transistors]
