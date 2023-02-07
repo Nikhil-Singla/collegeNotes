@@ -1,0 +1,11 @@
+Pipes
+Most commonly/basic form of IPC of Unix System
+- Unidirectional Communication
+- Processes must be stored in the same OS
+- Pipes exist only until the processes exist
+- Data can only be collected in FIFO order
+Ex. $ ls | more => Output of one process (ls) goes into the other process (more)
+
+ls - list
+more - print out one thing at a time
+fork => Create child process with identical state of the parent.
