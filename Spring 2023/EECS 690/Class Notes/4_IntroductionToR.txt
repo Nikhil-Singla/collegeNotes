@@ -20,3 +20,20 @@ Analysis Tool
 -> Clustering       : Finding previously unknown/unlabeled subgroups in a data set
 -> Estimation       : Taking measurements for a small number of items from a large group and making a good guess for 
 -                       the average or proportion for the large group
+
+R as a programming environment:
+- Open source & Cross Platform
+- Data analyst and storage
+- Designed to perform on vectors, matrices and uses well devloped but simple programming language
+- Allows for rapid development, and tools are distributed as packages which any user can download
+- Intuitive graphics system with easy to create data analysis reports.
+
+R is strong in data analysus and research.
+Python is strong in ML and database app development
+
+Pipes in R
+function(data)
+data |> function()
+
+function(data, arg)
+data |> function(arg)
