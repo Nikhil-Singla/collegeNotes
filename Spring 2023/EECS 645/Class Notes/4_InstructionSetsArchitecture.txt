@@ -1,0 +1,62 @@
+Our Plan: MIPS (Microarchitecture we will implement)
+Conditional Branch: When you need to check a condition before going to a branch.
+Jumps are unconditional branches.
+
+MIPS Instruction Set: Designed by Hennessy
+commercialized in 1985. March 2021 joined RISC-V International
+Typical of many modern ISA.
+Large share of embedded core market.
+
+Lowest Level of programming stack (under the hood = Machine/Object code)
+Each line has 32 bits which has 1 instruction
+Next level = Assembly
+It is pneumonics of the Machine code.
+Assembly Language for MIPS:
+swap: 
+sll $2, $5, 2
+add $2, $4, $2 => Add stuff in register 2 and 4 and put in register 2
+lw  $15, 0($2)
+. . .
+defined as op d, s1, s2 OR
+operation, destination, source1, source2
+
+Machine object code:
+000000 00000 00101 00010 00010 000000
+000000 00100 00010 00010 00000 100000
+
+Assembly language is converted using an Assembler to machine code.
+In the second line, add is mapped to 000000 xxxxx xxxxx xxxxx 00000 100000
+and the different bitfields have different assignments.
+
+Assembly just maps human readable pneumonics to machine code.
+
+High Level language program (in C) converts it to assembly using a compiler and so forth.
+One - to - One Mapping between Assembly and Machine code [Tight Coupling].
+Assembly code is exact and precise to be translated directly into machine code.
+
+From C to assembly => One to Many. Have abstract language and then convert it to whichever machine/compiler you're working on.
+
+Input Device Inputs Object Code.
+Data Path = Units that do actual work in CPU (ALU, Suction Cache, PC Registers, etc) and the internconnections between them
+Control Path = Control Unit that orchestrates how each DataPath unit is synchronized/scheduled for what functions, time.
+
+Step of object code stored in Memory: 
+- Fetch the instructions.
+- Decode the instructions.
+    - Split it into fields, according to processor.
+    - Interpret it (Control Processor) => Sends to DataPath
+- Execute it
+- Increment it to get the next instruction : Program Counter (Keep track of instruction to fetch next)
+
+Illusion of intelligence, its the designers work that makes the code work
+[Check slides for color coded work]
+
+Computational Instructions:
+Register 0 - 31 : named Register File [Total 32 special memory registers]
+
+Code started from 0 Operand ISA:
+Convention: Where the operand should reside first before instruction is called.
+=> Its called the STACK
+And the 0 operand architecture is called the STACK Machine.
+TOS = Top of Stack
+Need to return Top of Stack to location before operation to prevent memory leak.

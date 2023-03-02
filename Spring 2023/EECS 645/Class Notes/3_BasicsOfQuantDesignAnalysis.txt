@@ -90,3 +90,9 @@ Cerebras -> Computer system company, making Wafer-Scale Engine (WSE)
 
 WSE-2 : 2021
 -> Largest chip built, improved, 850000 AI-optimizied cores [46225mm^2, 2.6 Trillion Transistors]
+
+CPI for the process of calculations is average.
+If different instruction classes, take different number of cycles. n_clockcycles = SUM(CPI_i x IC_i) where i
+represents the i'th instruction.
+Unaffected speedup in increasing the number of processors is the sequential vs parallel parts.
+Maximum speedup is limited by the time of sequential parts.

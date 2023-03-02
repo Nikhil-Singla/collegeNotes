@@ -1,0 +1,11 @@
+SQL Injection:
+Root cause = Input/text interpretted as SQL commands
+Most common => Inject SQL commands into a web form
+
+Types:
+Blind => User gets database info upon submission of the form
+Non-Blind => User doesn't get the database reaction
+
+Perform ->
+1) Manually (leveraging special commands)
+2) Tools (SQLVap)

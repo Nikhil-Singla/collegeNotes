@@ -9,3 +9,5 @@ Ex. $ ls | more => Output of one process (ls) goes into the other process (more)
 ls - list
 more - print out one thing at a time
 fork => Create child process with identical state of the parent.
+
+Thread : Lightweight Process (Only keep track of CPU context, and not much else)
