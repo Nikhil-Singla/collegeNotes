@@ -5,6 +5,7 @@
 5) Make tables of values for checking multiple quant cases.
 
 In Ratio: IF UNITS ARE SQUARED, THE RATIO ALSO IS USUALLY SQUARED. DEPENDS ON FORMULA USED!!
+Increase in percentage =/= Multiplication times. Eg. Increase by 3 times. Increase = 200%
 
 Formulas/Properties To Remember:
 Parallel Lines:
