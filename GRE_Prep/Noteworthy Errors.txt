@@ -6,3 +6,11 @@
 6) GRAPH INTERPRETATION
 7) ESTIMATION BY ROUNDING TO NEAR 5, 10 OR MULTIPLE.
 8) YOU CAN GET 10% ESTIMATION EASILY, THEN DOUBLE OR HALF IT FOR 5% or 20%
+9) Make tables of values for checking multiple quant cases.
+10) Circle and Triangle Properties/Flash Cards
+
+Formulas/Properties To Remember:
+Parallel Lines:
+    Straight Lines/Same Side Interior Angles = 180*
+    Opp Interior Angles
+Sum of interior angles of a polygon = (Sides-2) * 180
